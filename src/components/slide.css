@@ -1,0 +1,23 @@
+.blue {
+  color: aqua;
+}
+.activeSlide {
+  opacity: 1;
+  transform: translate(0);
+}
+.lastSlide {
+  transform: translateX(-100%);
+}
+.nextSlide {
+  transform: translateX(100%);
+}
+.trans {
+  transition: all 0.3s linear;
+}
+.image {
+  transition: all 2s linear;
+}
+
+.name {
+  transition: all 1.2s linear;
+}
