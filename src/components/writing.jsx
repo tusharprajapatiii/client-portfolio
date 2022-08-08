@@ -26,7 +26,7 @@ function Writing() {
   return (
     <section
       ref={ref}
-      className="md:flex scroll-area md:py-7  px-10 bg-blue-100 py-8 md:bg-white"
+      className="md:flex scroll-area md:py-8 lg:py-2  px-10 bg-blue-100 py-8 md:bg-white"
     >
       <div className="">
         <img
