@@ -10,7 +10,7 @@ function Contact() {
             <h1 className="text-slate-100 text-center py-8 font-semibold text-lg">
               DOWNLOAD SANDEEP'S GMAT SECRET
             </h1>
-            <form className="flex flex-col gap-y-6 ">
+            <form className="flex flex-col gap-y-5 ">
               <input
                 className="p-2 rounded-xl"
                 type="text"

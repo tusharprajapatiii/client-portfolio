@@ -135,7 +135,7 @@ function Sliders() {
               >
                 {people.name}
               </motion.div>
-              <div className=" absolute top-24 lg:top-60 -left-0 md:-left-4 ">
+              <div className=" absolute top-24 lg:top-60 left-7 md:left-[25%] lg:-left-6 ">
                 <h1 className="underline text-base md:text-xl  underline-offset-4">
                   {people.name}
                 </h1>
