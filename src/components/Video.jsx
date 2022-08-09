@@ -33,7 +33,7 @@ function Video() {
         <div className="lg:mx-3">
           <motion.iframe
             animate={animation}
-            className="md:rounded-[100px] rounded-2xl md:h-[350px] md:w-[440px] lg:h-[480px] lg:w-[550px] xl:w-[700px] mx-auto h-60 w-72 "
+            className="md:rounded-[100px] rounded-2xl md:h-[350px] md:w-[440px] lg:h-[480px] lg:w-[550px] xl:w-[700px] mx-auto h-72 w-80 "
             src="https://www.youtube.com/embed/K4TOrB7at0Y?controls=0"
             title="YouTube video player"
             frameBorder={0}
