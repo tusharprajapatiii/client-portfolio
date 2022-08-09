@@ -5,7 +5,7 @@ function Contact() {
   return (
     <section className="-m-3 md:m-0 scroll-area  relative ">
       <div className=" bg-black lg:h-[100vh] relative lg:flex ">
-        <div className="flex justify-center h-[70vh] bg-black rounded-br-[120px] items-center basis-1/2  ">
+        <div className="flex justify-center h-[70vh] md:h-auto md:py-6 bg-black rounded-br-[120px] items-center basis-1/2  ">
           <div>
             <h1 className="text-slate-100 text-center py-8 font-semibold text-lg">
               DOWNLOAD SANDEEP'S GMAT SECRET
