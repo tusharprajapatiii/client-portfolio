@@ -11,7 +11,7 @@ import { BsTwitter } from "react-icons/bs";
 function Start() {
   return (
     <section className="bg-[#FF9D01] scroll-area">
-      <div className="h-[60vh] flex flex-col">
+      <div className=" h-[60vh] md:h-auto flex flex-col">
         <div className="flex justify-between pt-8 px-14">
           <div>
             <img className="md:h-20 h-8 w-16 md:w-24 " src={logo} alt="logo" />{" "}
@@ -24,7 +24,7 @@ function Start() {
             <FaGooglePlusG size={32} color="white" />
           </div>
         </div>
-        <div className="flex flex-1 justify-center items-center">
+        <div className="flex flex-1  justify-center items-center">
           <img className="md:h-72 h-32 w-32 md:w-80" src={main} alt="" />
         </div>
       </div>
