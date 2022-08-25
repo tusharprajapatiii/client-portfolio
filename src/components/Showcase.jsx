@@ -97,19 +97,19 @@ function Showcase() {
         <div className="hidden relative flex-1 md:block">
           <motion.img
             animate={animation}
-            className="lg:h-80 lg:w-80 md:h-48 md:w-48 absolute right-0 "
+            className="lg:h-[360px] lg:w-[360px] md:h-48 md:w-48 absolute right-0 "
             src={img1}
             alt=""
           />
           <motion.img
             animate={animation2}
-            className="lg:h-60 lg:w-60 md:h-40 md:w-40 top-20 lg:top-28 absolute lg:right-44 right-20 "
+            className="lg:h-[280px] lg:w-[280px] md:h-40 md:w-40 top-20 lg:top-28 absolute lg:right-48 right-28 "
             src={img3}
             alt=""
           />
           <motion.img
             animate={animation3}
-            className="lg:h-64 lg:w-64 md:h-40 md:w-40 top-36 lg:top-48 absolute lg:right-10 right-2 "
+            className="lg:h-[300px] lg:w-[300px] md:h-40 md:w-40 top-36 lg:top-48 absolute lg:right-4 right-2 "
             src={img2}
             alt=""
           />

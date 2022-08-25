@@ -4,6 +4,8 @@ import Slider from "react-slick";
 import videos from "../data2";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import template from "../assets/template.jpg";
+import "./slide.css";
+
 function Road() {
   const [video, setVideoIndex] = useState(0);
 
@@ -34,6 +36,7 @@ function Road() {
     vertical: true,
     verticalSwiping: true,
     autoplay: true,
+    // centerMode: true,
     // prevArrow: <PrevArrow />,
     // nextArrow: <NextArrow />,
     arrows: false,
@@ -71,14 +74,14 @@ function Road() {
         15 YEARS OF SUCESSFULLY PRODUCING 770 SCORES AND COUNTING...{" "}
       </div>
       <div className=" hidden md:block h-64 w-1 absolute left-10 bg-white "></div>
-      <div className="w-full md:w-[44%] lg:w-1/2  lg:px-16 my-10  ">
-        <Slider {...settings}>
+      <div className="w-full md:w-[44%] lg:w-1/2  lg:px-10   ">
+        <Slider {...settings} className="">
           {videos.map((v) => {
             return (
               <div>
                 <div className="border cursor-pointer relative border-red-400 h-72 m-auto w-56 rounded-xl bg-red-800">
                   <div className="relative top-3 mx-4 border-red-500 border h-[150px] bg-black rounded-2xl"></div>
-                  <div className="absolute -bottom-2  -right-4 p-[4px] font-bold border-4 rounded-full  bg-white  border-red-600 ">
+                  <div className="absolute -bottom-1  -right-4 p-[4px] font-bold border-4 rounded-full  bg-white  border-red-600 ">
                     {v.year}
                   </div>
                 </div>

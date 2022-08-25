@@ -17,7 +17,6 @@ function Sliders() {
   const animation2 = useAnimation();
 
   const settings = {
-    className: "center",
     centerMode: true,
     infinite: true,
     centerPadding: "0px",
@@ -86,8 +85,8 @@ function Sliders() {
     }
   }, [inView]);
   return (
-    <section ref={ref} className="py-8  relative scroll-area">
-      <div className=" bg-black h-1 md:h-2 relative top-9 left-10 w-1/4 md:w-1/3   "></div>
+    <section ref={ref} className="py-8 md:py-4  relative scroll-area">
+      <div className=" bg-black h-1 md:h-2 relative top-24 left-10 w-1/4 md:w-1/3   "></div>
       {/* {people.map((people, i) => {
         const { name, image } = people;
         return (
@@ -109,7 +108,7 @@ function Sliders() {
       >
         {name}
       </motion.div> */}
-      <div className="absolute md:h-2 bg-black h-1 right-5 abs w-1/5 md:1/4 bottom-60 z-20 " />
+      <div className="absolute md:h-2 bg-black h-1 right-5 abs w-1/5 md:1/4 bottom-52 z-20 " />
       <div className="  ">
         <Slider {...settings}>
           {people.map((people, i) => (
@@ -131,11 +130,11 @@ function Sliders() {
                 animate={animation2}
                 className={`${
                   index !== i && "opacity-0 "
-                } text-5xl flex justify-center absolute  -z-10  left-0 md:text-[180px] opacity-100 name tracking-widest whitespace-nowrap text-center w-full bg-transparent font-bold text-shadow top-14 `}
+                } text-5xl flex justify-center absolute  -z-10  left-0 md:text-[210px] opacity-100 name tracking-widest whitespace-nowrap text-center w-full bg-transparent font-bold  text-shadow top-24 `}
               >
                 {people.name}
               </motion.div>
-              <div className=" absolute top-24 lg:top-60 left-7 md:left-[25%] lg:-left-6 ">
+              <div className=" absolute top-24 lg:top-[330px] left-7 md:left-[20%] lg:-left-16 ">
                 <h1 className="underline text-base md:text-xl  underline-offset-4">
                   {people.name}
                 </h1>
