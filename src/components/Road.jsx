@@ -70,7 +70,7 @@ function Road() {
 
   return (
     <section className={`back scroll-area md:flex relative items-center py-8`}>
-      <div className=" relative md:absolute text-white top-5 text-xl md:text-2xl mb-7 md:m-0  font-bold left-[5%] ">
+      <div className=" relative md:absolute text-white top-0 text-xl md:text-2xl mb-0 md:m-0  font-bold left-[5%] ">
         15 YEARS OF SUCESSFULLY PRODUCING 770 SCORES AND COUNTING...{" "}
       </div>
       <div className=" hidden md:block h-64 w-1 absolute left-10 bg-white "></div>
