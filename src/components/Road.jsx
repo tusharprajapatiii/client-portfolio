@@ -5,6 +5,8 @@ import videos from "../data2";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import template from "../assets/template.jpg";
 import "./slide.css";
+import location from "../assets/location.png";
+import location2 from "../assets/location2.png";
 
 function Road() {
   const [video, setVideoIndex] = useState(0);
@@ -70,7 +72,7 @@ function Road() {
 
   return (
     <section className={`back scroll-area md:flex relative items-center py-8`}>
-      <div className=" relative md:absolute text-white top-0 text-xl md:text-2xl mb-0 md:m-0  font-bold left-[5%] ">
+      <div className=" relative md:absolute text-white top-0 text-xl md:text-2xl font-bold left-[5%] ">
         15 YEARS OF SUCESSFULLY PRODUCING 770 SCORES AND COUNTING...{" "}
       </div>
       <div className=" hidden md:block h-64 w-1 absolute left-10 bg-white "></div>
@@ -97,15 +99,19 @@ function Road() {
             <div className="h-1 w-28 bg-white"></div>
           </div>
           <img className="h-[90%] lg:h-[90vh] w-full  " src={road} alt="road" />
-          <div
-            className={` ${
-              video === 0
-                ? `border-red-600 opacity-100 p-3`
-                : `border-gray-600 opacity-40`
-            } absolute bottom-24 font-semibold border-[8px]  left-[25%] transition-all ease-in  bg-white p-2 delay-150 rounded-tl-3xl rounded-tr-3xl`}
-          >
-            2007
+          {/* <div className="relative">
+            <img
+              className={` ${
+                video === 0
+                  ? `border-red-600 opacity-100 p-3`
+                  : `border-gray-600 opacity-40`
+              } absolute bottom-24 font-semibold  h-18 w-12  left-[25%] transition-all ease-in  p-2 delay-150 `}
+              src={location}
+              alt=""
+            />
+            <h1 className="absolute text-black">2007</h1>
           </div>
+
           <div
             className={` ${
               video === 1
@@ -141,7 +147,102 @@ function Road() {
             } absolute top-10 font-semibold text-sm border-[5px]  right-[50%] bg-white p-1 transition-all ease-in delay-150 rounded-tl-3xl rounded-tr-3xl`}
           >
             2022
-          </div>
+          </div> */}
+          {video === 0 ? (
+            <span
+              className={`  ${
+                video === 0 ? "  opacity-100 p-1 lg:p-3" : " opacity-60"
+              } left-[25%] w-fit bottom-20  transition-all ease-in delay-200 absolute`}
+            >
+              <img className="h-16 w-18" src={location2} alt="" />
+              <h4 className="relative bottom-[50px] left-3">2007</h4>
+            </span>
+          ) : (
+            <span
+              className={`  ${
+                video === 0 ? "  opacity-100 p-1 lg:p-3" : " opacity-60"
+              } left-[25%] w-fit bottom-20  transition-all ease-in delay-200 absolute`}
+            >
+              <img className="h-16 w-18" src={location} alt="" />
+              <h4 className="relative bottom-[50px] left-3">2007</h4>
+            </span>
+          )}
+          {video === 1 ? (
+            <span
+              className={` ${
+                video === 1 ? "  opacity-100 p-1 lg:p-3" : " opacity-60"
+              } right-[35%] w-fit bottom-[38%]  transition-all ease-in delay-200  absolute`}
+            >
+              <img className="h-16 w-18" src={location2} alt="" />
+              <h4 className="relative bottom-[50px] left-3">2013</h4>
+            </span>
+          ) : (
+            <span
+              className={` ${
+                video === 1 ? "  opacity-100 p-1 lg:p-3" : " opacity-60"
+              } right-[35%] w-fit bottom-[38%]  transition-all ease-in delay-200  absolute`}
+            >
+              <img className="h-16 w-18" src={location} alt="" />
+              <h4 className="relative bottom-[50px] left-3">2013</h4>
+            </span>
+          )}
+          {video === 2 ? (
+            <span
+              className={`${
+                video === 2 ? "  opacity-100 p-1 lg:p-3" : " opacity-60"
+              } left-[25%] w-fit bottom-[55%]  transition-all ease-in delay-200  absolute`}
+            >
+              <img className="h-16 w-18" src={location2} alt="" />
+              <h4 className="relative bottom-[50px] left-3">2014</h4>
+            </span>
+          ) : (
+            <span
+              className={`${
+                video === 2 ? "  opacity-100 p-1 lg:p-3" : " opacity-60"
+              } left-[25%] w-fit bottom-[55%]  transition-all ease-in delay-200  absolute`}
+            >
+              <img className="h-16 w-18" src={location} alt="" />
+              <h4 className="relative bottom-[50px] left-3">2014</h4>
+            </span>
+          )}
+          {video === 3 ? (
+            <span
+              className={`${
+                video === 3 ? " opacity-100 p-1 lg:p-2" : " opacity-60"
+              } right-[29%] w-fit top-24  transition-all ease-in delay-200 absolute`}
+            >
+              <img className="h-16 w-18" src={location2} alt="" />
+              <h4 className="relative bottom-[50px] left-3">2015</h4>
+            </span>
+          ) : (
+            <span
+              className={`${
+                video === 3 ? " opacity-100 p-1 lg:p-2" : " opacity-60"
+              } right-[29%] w-fit top-[80px]  transition-all ease-in delay-200 absolute`}
+            >
+              <img className="h-16 w-18" src={location} alt="" />
+              <h4 className="relative bottom-[50px] left-3">2015</h4>
+            </span>
+          )}
+          {video === 4 ? (
+            <span
+              className={` ${
+                video === 4 ? " opacity-100 p-1 lg:p-3" : "opacity-60"
+              } right-[50%] w-fit top-6  transition-all ease-in delay-200  absolute`}
+            >
+              <img className="h-14 w-18" src={location2} alt="" />
+              <h4 className="relative text-sm bottom-[45px] left-2">2022</h4>
+            </span>
+          ) : (
+            <span
+              className={` ${
+                video === 4 ? " opacity-100 p-1 lg:p-3" : "opacity-60"
+              } right-[50%] w-fit top-6  transition-all ease-in delay-200  absolute`}
+            >
+              <img className="h-14 w-18" src={location} alt="" />
+              <h4 className="relative text-sm bottom-[45px] left-2">2022</h4>
+            </span>
+          )}
           <div className="absolute right-10 bottom-20">
             <div className="text-white text-right ">where it all started</div>
             <div className="h-1 w-80 bg-white"></div>
