@@ -45,20 +45,13 @@ function Showcase() {
       <div className="md:flex my-6 md:py-16 overflow-hidden ">
         <div className="md:hidden">
           <div className="relative">
-            <motion.img
-              animate={animation}
-              className="h-52 mx-auto w-52"
-              src={img1}
-              alt=""
-            />
-            <motion.img
-              animate={animation2}
+            <img className="h-52 mx-auto w-52" src={img1} alt="" />
+            <img
               className="h-36 w-36 right-10 absolute top-24"
               src={img3}
               alt=""
             />
-            <motion.img
-              animate={animation3}
+            <img
               className="h-40 w-40 -mt-28 relative left-10  "
               src={img2}
               alt=""
