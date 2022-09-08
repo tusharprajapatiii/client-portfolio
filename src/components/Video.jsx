@@ -42,25 +42,20 @@ function Video() {
           ></motion.iframe>
         </div>
         <div className="px-8 xl:px-14 my-3 xl: ">
-          <h2 className="text-2xl lg:text-4xl text-center font-semibold my-2">
-            lorem ipsum
+          <h2 className="text-2xl lg:text-4xl text-center lg:font-extrabold my-2">
+            MISSON 770
           </h2>
           <motion.p
             animate={animation2}
             className="text-xs lg:text-base lg:mt-10 "
           >
             {" "}
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
-            corporis. Ipsa amet reiciendis id et nesciunt ab quidem fugiat
-            corporis ex, veritatis aspernatur, enim consequuntur maiores
-            accusantium inventore similique, quia in reprehenderit sed iste! Ex,
-            minus? Sit, temporibus eaque laborum illo earum officiis impedit
-            voluptate suscipit necessitatibus nulla, aspernatur, error neque
-            praesentium numquam rem animi quam ut distinctio! Architecto nihil
-            magnam voluptatibus voluptate tempore nulla dolore incidunt quod
-            eius ducimus non laborum deleniti, velit vero nostrum consequatur,
-            quis iure dolorem sequi? Quibusdam blanditiis doloremque fugit
-            officiis sapiente fuga doloribus possimus.
+            From the past 15 years, we here at the Top One Percent started
+            delivering scores of 770+ when not 1 institute back then peak was
+            higher than a 720. We are proud to accomplish this on more than
+            hundreds of occasions year on year. We along with Sandeep Gupta have
+            been able to deliver even perfect scores to our students and our
+            testimonials talk for themselves.
           </motion.p>
         </div>
       </div>

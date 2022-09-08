@@ -42,7 +42,7 @@ function Road() {
     // prevArrow: <PrevArrow />,
     // nextArrow: <NextArrow />,
     arrows: false,
-    pauseOnHover: false,
+    pauseOnHover: true,
     beforeChange: (current, next) => setVideoIndex(next),
     responsive: [
       {
@@ -73,16 +73,28 @@ function Road() {
   return (
     <section className={`back scroll-area md:flex relative items-center py-8`}>
       <div className=" relative md:absolute text-white top-0 text-xl md:text-2xl font-bold left-[5%] ">
-        15 YEARS OF SUCESSFULLY PRODUCING 770 SCORES AND COUNTING...{" "}
+        15 YEARS OF SUCCESSFULLY PRODUCING 770 SCORES AND COUNTING...{" "}
       </div>
-      <div className=" hidden md:block h-64 w-1 absolute left-10 bg-white "></div>
       <div className="w-full md:w-[44%] lg:w-1/2  lg:px-10   ">
         <Slider {...settings} className="">
           {videos.map((v) => {
             return (
               <div>
-                <div className="border cursor-pointer relative border-red-400 h-72 m-auto w-56 rounded-xl bg-red-800">
-                  <div className="relative top-3 mx-4 border-red-500 border h-[150px] bg-black rounded-2xl"></div>
+                <div className="border cursor-pointer relative border-red-400 h-[400px] m-auto w-[300px] rounded-xl bg-red-800 p-1">
+                  <iframe
+                    title="Rankers video"
+                    height={220}
+                    className="relative top-3 w-full  border-red-500 border rounded-2xl"
+                    src={v.video}
+                    frameborder="0"
+                    autoplay
+                  ></iframe>
+                  <div className="pt-5">
+                    <h2 className="text-center font-semibold text-white">
+                      {v.name}
+                    </h2>
+                    <p className="text-xs mt-2 px-2 text-white">{v.content}</p>
+                  </div>
                   <div className="absolute -bottom-1  -right-4 p-[4px] font-bold border-4 rounded-full  bg-white  border-red-600 ">
                     {v.year}
                   </div>
@@ -94,10 +106,7 @@ function Road() {
       </div>
       <div className=" hidden  md:block">
         <div className="relative py-8 my-2">
-          <div className="absolute left-[18%] top-8">
-            <div className="text-white text-left ">Now we are here</div>
-            <div className="h-1 w-28 bg-white"></div>
-          </div>
+          <div className="absolute left-[18%] top-8"></div>
           <img className="h-[90%] lg:h-[90vh] w-full  " src={road} alt="road" />
           {/* <div className="relative">
             <img

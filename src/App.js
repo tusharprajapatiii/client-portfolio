@@ -1,7 +1,6 @@
 import Contact from "./components/Contact";
 import Road from "./components/Road";
 import Showcase from "./components/Showcase";
-import Slide from "./components/Slide";
 import Sliders from "./components/Slider";
 import Start from "./components/Start";
 import Video from "./components/Video";

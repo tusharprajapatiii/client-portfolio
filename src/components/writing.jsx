@@ -44,19 +44,20 @@ function Writing() {
       <h1 className="text-center cursive md:hidden py-3">
         a note from sandeep gupta
       </h1>
-      <div className="text-[12px] md:border-t-3 relative md:rounded-bl-[140px] md:text-sm md:box md:border-t-4  md:border-blue-400 md:px-14 md:py-14 px-6">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
-        consectetur obcaecati, eos magnam quisquam sapiente numquam dicta neque
-        officiis iusto? Necessitatibus omnis iste modi ad molestiae deserunt
-        mollitia dolorum iure fugiat alias officia, corporis voluptatum tenetur
-        maiores aperiam a! Error neque, eius consequatur numquam provident ab
-        dolores ullam alias, porro obcaecati non velit, nobis ex. Molestiae
-        ullam in expedita repellat. Est hic repellendus earum, eum excepturi
-        laudantium consectetur itaque asperiores obcaecati commodi et aliquid
-        rerum perferendis a possimus repellat unde sapiente officiis ab soluta
-        ad corporis. Reprehenderit et alias iure voluptas magnam repudiandae
-        esse voluptates. Eaque repellat harum blanditiis omnis?
-        <div className=" hidden md:block md:top-6 md:text-xl lg:top-20  left-0 relative cursive text-center lg:text-3xl">
+      <div className="text-[12px] lg:leading-6 line tracking-wider md:tracking-widest md:border-t-3 relative md:rounded-bl-[140px] md:text-sm md:box md:border-t-4  md:border-blue-400 md:px-14 md:py-14 px-6">
+        Hi, This is Sandeep Gupta, the foremost GMAT / GRE Trainer in Asia with
+        perfect scores on both exams. For the last 25+ years (since 1996), I
+        have dedicated my life to making the dream of a GMAT / GRE 99th
+        percentile score and of an Ivy League education come true for thousands
+        of my students (from places like Harvard, Stanford, MIT, and every other
+        top university in the world) for MBA, MS, and Ph.D. programs. The
+        biggest strength of my teaching is that I am able to transfer my
+        “Success-DNA” to my students – I repeat: my biggest achievement is not
+        that I have scored the perfect scores on the GMAT/GRE multiple times but
+        that, by using the same techniques that I used (OCTAVE, CLESSSP, PRIME,
+        ACT, ANT, ACED, LINGO, and TRAPS), my students have been able to get
+        similar successes on more than 20,000 occasions.
+        <div className=" hidden md:block md:top-6 md:text-xl lg:top-32  left-0 relative cursive text-center lg:text-3xl">
           {" "}
           <Typewriter
             options={{
