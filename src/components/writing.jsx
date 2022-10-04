@@ -51,7 +51,7 @@ function Writing() {
       <h1 className="text-center cursive md:hidden py-3">
         a note from sandeep gupta
       </h1>
-      <div className="text-[12px] md:basis-[70%] lg:leading-6 line tracking-wider md:tracking-widest md:border-t-3 relative md:rounded-bl-[140px] md:text-xs lg:sm md:box md:border-t-4  md:border-blue-400 md:px-14 md:py-14 px-6">
+      <div className="text-[12px] md:basis-[70%] lg:leading-6 line tracking-wider md:tracking-widest md:border-t-3 lg:text-base relative md:rounded-bl-[140px] md:text-xs lg:sm md:box md:border-t-4  md:border-blue-400 md:px-14 md:py-14 px-6">
         Hi, This is Sandeep Gupta, the foremost
         <button
           onClick={() => setGmat(true)}

@@ -13,7 +13,7 @@ import { BsTwitter } from "react-icons/bs";
 function Start() {
   return (
     <section className="bg-[#FF9D01] scroll-area">
-      <div className=" h-[60vh] md:h-[inherit]  lg:h-full  flex flex-col">
+      <div className=" h-[60vh] md:h-[450px]  lg:h-full  flex flex-col">
         <div className="flex justify-between relative pt-8 px-14">
           <div className=" hidden  lg:mx-auto  md:block">
             {/* <FaFacebookF size={28} color="white" />
