@@ -63,14 +63,14 @@ function Showcase() {
             </button>
           </div>
         </div>
-        <div className="justify-center md:items-start flex flex-col items-center md:px-10 mt-6 ">
-          <h1 className="text-orange-400 text-2xl md:text-[40px] lg:text-[54px] md:leading-[60px] font-bold">
+        <div className="justify-center md:items-start  tracking-tight flex flex-col items-center md:px-10 mt-6 ">
+          <h1 className="text-orange-400 text-2xl md:text-[34px] lg:text-[54px] md:leading-[54px]  font-extrabold">
             DO YOU WANT A 99<sup>th</sup>
             <br /> PERCENTILE SCORE
             <br />
             ON YOUR <span className="text-blue-500">GMAT / GRE ?</span>
           </h1>
-          <p className="text-center md:text-lg mt-4 lg:text-2xl md:my-10 md:text-left font-medium">
+          <p className="text-center md:text-lg mt-4 lg:text-2xl md:my-6 lg:my-10 md:text-left font-medium">
             If yes, please read on.
             <br />
             Else, leave this page right now!
@@ -80,7 +80,7 @@ function Showcase() {
               CONTACT US
             </button>
             <button class="px-3 py-2 rounded-2xl text-slate-100 bg-orange-500">
-              BOOK MEETING
+              BOOK DEMO
             </button>
           </div>
           {/* <h1 class="">DO YOU WANT A 99<sup>TH</sup>

@@ -29,25 +29,26 @@ function Video() {
   }, [inView]);
   return (
     <section ref={ref} className="scroll-area">
-      <div className="md:m-6 py-10 md:flex ">
-        <div className=" shadow-2xl box rounded-3xl p-[2px]   ">
+      <div className="md:m-6 py-10 md:flex w-full h-full">
+        <div className=" shadow-2xl box lg:basis-[58%] md:w-[60vw]  lg:h-[85vh] h-[300px] md:h-[360px]   rounded-3xl p-[2px]   ">
           <motion.iframe
             animate={animation}
-            className="md:rounded-3xl rounded-2xl md:h-[350px] md:w-[440px] lg:h-[480px] lg:w-[550px] xl:w-[700px] mx-auto h-72 w-80 "
-            src="https://www.youtube.com/embed/K4TOrB7at0Y?controls=0"
+            // className="md:rounded-3xl rounded-2xl md:h-[350px] md:w-[440px] lg:h-[480px] lg:w-[550px] xl:w-[700px]  mx-auto h-72 w-80 "
+            className="md:rounded-3xl rounded-2xl  w-full h-full  mx-auto "
+            src="https://www.youtube.com/embed/crGpT6C7jeM"
             title="YouTube video player"
             frameBorder={0}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></motion.iframe>
         </div>
-        <div className="px-8 xl:px-14 my-3 xl: ">
+        <div className="px-8 xl:px-14 my-3 md:basis-[40%] ">
           <h2 className="text-2xl lg:text-4xl text-center lg:font-extrabold my-2">
-            MISSON 770
+            What is Mission 770?
           </h2>
           <motion.p
             animate={animation2}
-            className="text-xs lg:text-base lg:mt-10 "
+            className="text-xs lg:text-lg md:text-sm xl:px-10 lg:mt-10 "
           >
             {" "}
             From the past 15 years, we here at the Top One Percent started

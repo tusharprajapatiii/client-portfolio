@@ -32,12 +32,16 @@ function Road() {
     );
   };
   const settings = {
+    className: "slide",
     infinite: true,
+    dots: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    dotsClass: "dots",
     vertical: true,
     verticalSwiping: true,
     autoplay: true,
+    // lazyLoad: true,
     // centerMode: true,
     // prevArrow: <PrevArrow />,
     // nextArrow: <NextArrow />,
@@ -72,40 +76,40 @@ function Road() {
 
   return (
     <section className={`back scroll-area md:flex relative items-center py-8`}>
-      <div className=" relative md:absolute text-white top-0 text-xl md:text-2xl font-bold left-[5%] ">
+      <div className=" relative md:absolute text-white top-0 text-xl md:text-2xl font-bold left-[5%] py-2 z-20 bg-black">
         15 YEARS OF SUCCESSFULLY PRODUCING 770 SCORES AND COUNTING...{" "}
       </div>
-      <div className="w-full md:w-[44%] lg:w-1/2  lg:px-10   ">
-        <Slider {...settings} className="">
+      <div className="w-full md:w-[44%]  basis-[55%]  pl-5  h-full ">
+        <Slider {...settings}>
           {videos.map((v) => {
             return (
-              <div>
-                <div className="border cursor-pointer relative border-red-400 h-[400px] m-auto w-[300px] rounded-xl bg-red-800 p-1">
+              <div className="">
+                <div className="border cursor-pointer relative border-red-400 h-[88vh] m-auto w-[500px]  right-0 rounded-xl bg-orange-600 p-1">
                   <iframe
                     title="Rankers video"
                     height={220}
-                    className="relative top-3 w-full  border-red-500 border rounded-2xl"
+                    className="relative top-3 w-full h-[70%]  border-red-500 border rounded-2xl"
                     src={v.video}
                     frameborder="0"
                     autoplay
                   ></iframe>
-                  <div className="pt-5">
+                  <div className="pt-3">
                     <h2 className="text-center font-semibold text-white">
                       {v.name}
                     </h2>
-                    <p className="text-xs mt-2 px-2 text-white">{v.content}</p>
+                    <p className="text-xs mt-2 px-1 text-white">{v.content}</p>
                   </div>
-                  <div className="absolute -bottom-1  -right-4 p-[4px] font-bold border-4 rounded-full  bg-white  border-red-600 ">
+                  {/* <div className="absolute -bottom-1  -right-4 p-[4px] font-bold border-4 rounded-full  bg-white  border-red-600 ">
                     {v.year}
-                  </div>
+                  </div> */}
                 </div>
               </div>
             );
           })}
         </Slider>
       </div>
-      <div className=" hidden  md:block">
-        <div className="relative py-8 my-2">
+      <div className=" hidden basis-[45%]  md:block">
+        <div className="relative text-[13px] font-semibold py-8 my-2">
           <div className="absolute left-[18%] top-8"></div>
           <img className="h-[90%] lg:h-[90vh] w-full  " src={road} alt="road" />
           {/* <div className="relative">
