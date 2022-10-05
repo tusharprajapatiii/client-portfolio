@@ -12,7 +12,7 @@ import ScoreModal from "./ScoreModal";
 function Writing() {
   const [gmat, setGmat] = useState(false);
   const [gre, setGre] = useState(false);
-
+  const [hide, setHide] = useState(false);
   const { ref, inView, entry } = useInView({
     /* Optional options */
     threshold: 0.3,
@@ -25,15 +25,21 @@ function Writing() {
         transition: { duration: 1 },
         opacity: [0.2, 0.4, 0.6, 0.8, 1],
       });
+      setTimeout(() => {
+        setHide(true);
+      }, 2000);
     }
     if (!inView) {
       animation.start({ y: "10vh", opacity: 0 });
+      setHide(false);
     }
-  }, [inView]);
+  }, [inView, hide]);
   return (
     <section
       ref={ref}
-      className={`md:flex scroll-area md:py-8 lg:py-2 relative overflow-y-scroll lg:max-h-screen overflow-x-hidden  px-10 bg-blue-100 py-8 md:bg-white`}
+      className={`md:flex scroll-area md:py-8 lg:py-2 relative ${
+        hide ? "overflow-y-auto" : "overflow-y-hidden"
+      } lg:max-h-screen overflow-x-hidden  px-10 bg-blue-100 py-8 md:bg-white`}
     >
       <div className="lg:h-full lg:w-[25vw] md:basis-[45%] lg:basis-[30%]">
         <img
