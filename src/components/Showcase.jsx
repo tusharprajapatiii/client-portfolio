@@ -64,7 +64,7 @@ function Showcase() {
           </div>
         </div>
         <div className="justify-center md:items-start  tracking-tight flex flex-col items-center md:px-10 mt-6 ">
-          <h1 className="text-orange-400 text-2xl md:text-[34px] lg:text-[54px] md:leading-[54px]  font-extrabold">
+          <h1 className="text-orange-400 text-2xl md:text-[34px] lg:text-[50px] xl:text-[58px] md:leading-[48px] lg:leading-[60px]  font-bold">
             DO YOU WANT A 99<sup>th</sup>
             <br /> PERCENTILE SCORE
             <br />
@@ -87,22 +87,22 @@ function Showcase() {
           <br>PERCENTILE SCORE
           <br>ON YOUR <span>GMAT / GRE ?</span>   */}
         </div>
-        <div className="hidden relative flex-1 md:block">
+        <div className="hidden relative xl:mr-0 lg:-mr-[50px] flex-1 md:block">
           <motion.img
             animate={animation}
-            className="lg:h-[360px] lg:w-[360px] md:h-48 md:w-48 absolute right-0 "
+            className="xl:h-[375px] lg:h-[340px]  lg:w-[340px] xl:w-[375px] md:h-48 md:w-48 absolute right-0 "
             src={img1}
             alt=""
           />
           <motion.img
             animate={animation2}
-            className="lg:h-[280px] lg:w-[280px] md:h-40 md:w-40 top-20 lg:top-28 absolute lg:right-48 right-28 "
+            className="xl:h-[290px] xl:w-[290px] lg:h-[270px] lg:w-[270px] md:h-40 md:w-40 top-20 lg:top-28 absolute lg:right-52 right-28 "
             src={img3}
             alt=""
           />
           <motion.img
             animate={animation3}
-            className="lg:h-[300px] lg:w-[300px] md:h-40 md:w-40 top-36 lg:top-48 absolute lg:right-4 right-2 "
+            className="xl:h-[312px] xl:w-[312px] lg:h-[270px] lg:w-[270px] md:h-40 md:w-40 top-36 lg:top-52 absolute lg:right-4 right-2 "
             src={img2}
             alt=""
           />

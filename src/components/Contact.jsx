@@ -5,6 +5,8 @@ import {
   FaYoutube,
   FaWhatsapp,
   FaGooglePlusG,
+  FaLinkedin,
+  FaInstagram,
 } from "react-icons/fa";
 import { BsTwitter } from "react-icons/bs";
 
@@ -46,12 +48,31 @@ function Contact() {
           </button>
         </form>
       </div>
-      <div className="flex z-20 absolute bottom-0 bg-black w-full py-1 justify-center space-x-4">
-        <FaFacebookF size={20} color="white" />
-        <FaYoutube size={20} color="white" />
-        <BsTwitter size={20} color="white" />
-        <FaWhatsapp size={20} color="white" />
-        <FaGooglePlusG size={20} color="white" />
+      <div className="z-20 absolute bottom-0 text-sm  bg-[#373737] text-white w-full ">
+        <div className="flex justify-between">
+          <div className="flex justify-between w-[40%] rounded-tr-[30px] rounded-br-[30px] relative bottom-2 px-8 py-2 bg-orange-600">
+            <span>
+              <strong>
+                Call us: <a href="tel:+919739561394">+91 97395-61394</a> &nbsp;{" "}
+              </strong>
+            </span>
+            <span>
+              <a href="mailto:info@top-one-percent.com">
+                info@top-one-percent.com
+              </a>
+            </span>
+          </div>
+          <div className="pr-4">
+            Copyright © 2022 BOLD Education Pvt. Ltd. All Rights Reserved.
+          </div>
+        </div>
+        <div className="flex my-2  justify-center space-x-4">
+          <FaFacebookF size={25} color="white" />
+          <FaYoutube size={25} color="white" />
+          <FaInstagram size={25} color="white" />
+          <FaLinkedin size={25} color="white" />
+          {/* <FaGooglePlusG size={20} color="white" /> */}
+        </div>
       </div>
     </section>
   );

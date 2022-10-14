@@ -8,6 +8,7 @@ import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { useState } from "react";
 import ScoreModal from "./ScoreModal";
+import "./slide.css";
 
 function Writing() {
   const [gmat, setGmat] = useState(false);
@@ -37,29 +38,101 @@ function Writing() {
   return (
     <section
       ref={ref}
-      className={`md:flex scroll-area md:py-8 lg:py-2 relative ${
+      className={`md:flex scroll-area md:py-2 lg:py-2 relative ${
         hide ? "overflow-y-auto" : "overflow-y-hidden"
-      } lg:max-h-screen overflow-x-hidden  px-10 bg-blue-100 py-8 md:bg-white`}
+      } lg:max-h-screen overflow-x-hidden  px-4 bg-blue-100 py-8 md:bg-white`}
     >
-      <div className="lg:h-full lg:w-[25vw] md:basis-[45%] lg:basis-[30%]">
+      <div className="lg:h-full lg:w-[25vw] relative md:basis-[37%] lg:basis-[30%]">
         <img
           className="h-48 mx-auto md:hidden w-36"
           src={sandeep}
           alt="sandeep"
         />
-        <motion.img
+        <motion.div
           animate={animation}
-          className=" hidden md:block h-full w-full"
-          src={sand}
-          alt=""
-        />
+          className="hidden relative md:block h-full w-full"
+        >
+          <motion.img
+            className="  h-full w-full"
+            src={sand}
+            alt="Sandeep Gupta"
+          />
+          <span className=" hidden lg:block absolute py-[5%] text-white bottom-[6.5%] mx-auto text-xs rounded-3xl bg-blue-600 px-[13%] right-[24%]">
+            Meet Your Mentor
+          </span>
+        </motion.div>
       </div>
-      <h1 className="text-center cursive md:hidden py-3">
+      {/* <h1 className="text-center cursive md:hidden py-3">
         a note from sandeep gupta
-      </h1>
-      <div className="text-[12px] md:basis-[70%] lg:leading-6 line tracking-wider md:tracking-widest md:border-t-3 lg:text-sm xl:text-base relative md:rounded-bl-[140px] md:text-xs lg:sm md:box md:border-t-4  md:border-blue-400 md:px-14 md:py-14 px-6">
-        Hi, This is Sandeep Gupta, the foremost
-        <button
+      </h1> */}
+      <div className="text-[12px]   md:basis-[63%] lg:basis-[70%] lg:h-[95%] lg:my-auto  line tracking-wider md:tracking-widest md:border-t-3 lg:text-sm xl:text-sm relative md:rounded-bl-[50px] md:text-xs  md:box md:border-t-4  md:border-blue-400 xl:py-3  md:px-6 md:py-4 px-2">
+        <p className="mt-2">
+          Hi, This is Sandeep Gupta, the foremost GMAT / GRE Trainer in Asia
+          with perfect scores on both GMAT and GRE exams.
+        </p>
+        <div className="grid grid-rows-2 md:grid-cols-2 gap-2 md:flex my-4 xl:my-9  text-white font-bold text-[1.4rem] ">
+          <div
+            className="md:h-[18vh] mx-auto flex flex-col items-center w-full md:w-[20vw]"
+            style={{
+              backgroundImage: `url(${GMAT})`,
+              backgroundBlendMode: "overlay",
+              backgroundSize: "cover",
+              backgroundColor: "rgba(0,0,0,0.7)",
+            }}
+          >
+            <h3 className="text-center md:text-[0.8rem] xl:text-[1.4rem] mt-3">
+              GMAT:PERFECT 800
+            </h3>
+            <button
+              onClick={() => {
+                setGmat(true);
+                setGre(false);
+              }}
+              className="py-1 mt-2 md:mt-4 px-2 mr-1 ml-1 border-2 font-semibold text-xs  border-black text-white bg-blue-500 rounded-md"
+            >
+              Click Here
+            </button>
+          </div>
+          <div
+            className="md:h-[18vh] h-[100px] flex flex-col w-full items-center mx-auto md:w-[20vw]"
+            style={{
+              backgroundImage: `url(${GRE})`,
+              backgroundBlendMode: "overlay",
+              backgroundSize: "cover",
+              backgroundColor: "rgba(0,0,0,0.7)",
+            }}
+          >
+            <h3 className="text-center md:text-[0.8rem] xl:text-[1.4rem] mt-3">
+              GRE:PERFECT 340
+            </h3>
+            <button
+              onClick={() => {
+                setGre(true);
+                setGmat(false);
+              }}
+              className=" py-1 mt-2 md:mt-4 ml-1 px-2 border-2 text-xs font-semibold border-black text-white bg-yellow-500 rounded-md"
+            >
+              Click Here
+            </button>
+          </div>
+        </div>
+        <p>
+          {" "}
+          For the last 25+ years (since 1996), I have dedicated my life to
+          making the dream of a GMAT / GRE 99th percentile score and of an Ivy
+          League education come true for thousands of my students from places
+          like Harvard, Stanford, MIT, and every other top university in the
+          world for MBA, MS, and Ph.D. programs.
+        </p>
+        <p className="">
+          The biggest strength of my teaching is that I am able to transfer my
+          “Success-DNA” to my students – I repeat: my biggest achievement is not
+          that I have scored the perfect scores on the GMAT/GRE multiple times
+          but that, by using the same techniques that I used (OCTAVE, CLESSSP,
+          PRIME, ACT, ANT, ACED, LINGO, and TRAPS), my students have been able
+          to get similar successes on more than 20,000 occasions.
+        </p>
+        {/* <button
           onClick={() => {
             setGmat(true);
             setGre(false);
@@ -77,19 +150,19 @@ function Writing() {
           className=" py-1 ml-1 px-2 border-2 font-semibold border-black text-white bg-orange-500 rounded-md"
         >
           GRE
-        </button>{" "}
-        Trainer in Asia with perfect scores on both exams. For the last 25+
-        years (since 1996), I have dedicated my life to making the dream of a
-        GMAT / GRE 99th percentile score and of an Ivy League education come
-        true for thousands of my students (from places like Harvard, Stanford,
-        MIT, and every other top university in the world) for MBA, MS, and Ph.D.
-        programs. The biggest strength of my teaching is that I am able to
-        transfer my “Success-DNA” to my students – I repeat: my biggest
-        achievement is not that I have scored the perfect scores on the GMAT/GRE
-        multiple times but that, by using the same techniques that I used
-        (OCTAVE, CLESSSP, PRIME, ACT, ANT, ACED, LINGO, and TRAPS), my students
-        have been able to get similar successes on more than 20,000 occasions.
-        <div className=" hidden md:block md:top-6 md:text-xl lg:top-16  left-0 relative cursive text-center lg:text-3xl">
+        </button>{" "} */}
+        {/* For the last 25+ years (since 1996), I have dedicated my life to making
+        the dream of a GMAT / GRE 99th percentile score and of an Ivy League
+        education come true for thousands of my students (from places like
+        Harvard, Stanford, MIT, and every other top university in the world) for
+        MBA, MS, and Ph.D. programs. The biggest strength of my teaching is that
+        I am able to transfer my “Success-DNA” to my students – I repeat: my
+        biggest achievement is not that I have scored the perfect scores on the
+        GMAT/GRE multiple times but that, by using the same techniques that I
+        used (OCTAVE, CLESSSP, PRIME, ACT, ANT, ACED, LINGO, and TRAPS), my
+        students have been able to get similar successes on more than 20,000
+        occasions. */}
+        <div className=" hidden lg:block md:top-6 md:text-base lg:text-xl xl:top-12  left-0 relative cursive text-center  xl:text-2xl">
           {" "}
           <Typewriter
             options={{

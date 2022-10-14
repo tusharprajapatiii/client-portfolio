@@ -86,7 +86,7 @@ function Sliders() {
   }, [inView]);
   return (
     <section ref={ref} className="py-8 md:py-4  relative scroll-area">
-      <div className=" bg-black h-1 md:h-2 relative top-24 left-10 w-1/4 md:w-1/3   "></div>
+      <div className=" bg-black h-1 md:h-2 relative top-24 md:left-10 left-4 w-1/4 md:w-1/3   "></div>
       {/* {people.map((people, i) => {
         const { name, image } = people;
         return (
@@ -108,7 +108,7 @@ function Sliders() {
       >
         {name}
       </motion.div> */}
-      <div className="absolute md:h-2 bg-black h-1 right-5 abs w-1/5 md:1/4 bottom-52 z-20 " />
+      <div className="absolute md:h-2 bg-black h-1 right-5 abs w-1/5 md:w-[27%] md:bottom-52 bottom-[254px]  z-20 " />
       <div className="  ">
         <Slider {...settings}>
           {people.map((people, i) => (
@@ -130,11 +130,11 @@ function Sliders() {
                 animate={animation2}
                 className={`${
                   index !== i && "opacity-0 "
-                } text-5xl flex justify-center absolute  -z-10  left-0 md:text-[210px] opacity-100 name tracking-widest whitespace-nowrap text-center w-full bg-transparent font-bold  text-shadow top-24 `}
+                } text-5xl flex justify-center absolute  -z-10  left-0 md:text-[200px] opacity-100 name tracking-widest whitespace-nowrap text-center w-full bg-transparent font-bold  text-shadow top-24 `}
               >
                 {people.name}
               </motion.div>
-              <div className=" absolute top-24 lg:top-[330px] left-7 md:left-[20%] lg:-left-16 ">
+              <div className=" absolute top-28 lg:top-[330px] left-2 md:left-[20%] lg:-left-20 ">
                 <h1 className="underline text-base md:text-xl  underline-offset-4">
                   {people.name}
                 </h1>
@@ -145,12 +145,19 @@ function Sliders() {
                 {/* <AiFillLeftCircle className="absolute top-1/2 -left-2" /> */}
                 <img
                   className="absolute left-4  -top-4 h-14 w-14"
-                  src={people.image}
+                  src={people.imageC}
                 />
                 <div className="relative left-20 text-sm">{people.name}</div>
                 <div className="text-[8px] relative top-6">{people.name}</div>
                 {/* <AiFillRightCircle className="absolute top-1/2 -right-2" /> */}
               </article>
+              <div className="xl:absolute hidden md:-right-[120%] xl:-right-[100%] bottom-[50%]">
+                <img
+                  className="w-1/2"
+                  src={people.college}
+                  alt={people.college}
+                />
+              </div>
             </div>
           ))}
         </Slider>

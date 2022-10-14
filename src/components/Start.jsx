@@ -13,22 +13,22 @@ import { BsTwitter } from "react-icons/bs";
 function Start() {
   return (
     <section className="bg-[#FF9D01] scroll-area">
-      <div className=" h-[450px] md:h-[450px]  lg:h-full  flex flex-col">
-        <div className="flex justify-between relative pt-8 px-14">
-          <div className=" hidden  lg:mx-auto  md:block">
+      <div className=" h-[540px] md:h-[450px]  lg:h-full  flex flex-col">
+        <div className="flex justify-between relative pt-8 items-start px-8">
+          <div className=" hidden  xl:mx-auto  md:block">
             {/* <FaFacebookF size={28} color="white" />
             <FaYoutube size={28} color="white" />
             <BsTwitter size={28} color="white" />
             <FaWhatsapp size={28} color="white" />
             <FaGooglePlusG size={32} color="white" /> */}
-            <ul className="flex lg:gap-8 xl:gap-12 md:gap-4 font font-extrabold pr-12 gru text-white">
+            <ul className="flex lg:gap-8 xl:gap-12 cursor-pointer md:gap-4 font-semibold pr-12 gru text-white">
               <li>GMAT</li>
               <li>Success Stories</li>
               <li>About Us</li>
               <li> Blogs</li>
               <li>Contact Us</li>
             </ul>
-            <button className="bg-blue-700 py-[6px] shadow-md shadow-blue-900 absolute top-[50%] text-white font-semibold right-2 xl:right-[2%] px-3 rounded-md">
+            <button className="bg-blue-700 py-[6px] font-medium shadow-md shadow-blue-900 absolute top-[50%] text-white  right-2 xl:right-[2%] px-3 rounded-md">
               Request a live demo with Sandeep
             </button>
           </div>
