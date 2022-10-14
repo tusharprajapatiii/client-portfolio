@@ -151,7 +151,7 @@ function Sliders() {
                 <div className="text-[8px] relative top-6">{people.name}</div>
                 {/* <AiFillRightCircle className="absolute top-1/2 -right-2" /> */}
               </article>
-              <div className="xl:absolute hidden md:-right-[120%] xl:-right-[100%] bottom-[50%]">
+              <div className=" xl:block absolute hidden md:-right-[120%] xl:-right-[100%] bottom-[50%]">
                 <img
                   className="w-1/2"
                   src={people.college}
