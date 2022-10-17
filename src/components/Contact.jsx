@@ -7,9 +7,10 @@ import {
   FaGooglePlusG,
   FaLinkedin,
   FaInstagram,
+  FaMailchimp,
 } from "react-icons/fa";
 import { BsTwitter } from "react-icons/bs";
-
+import { GrMail } from "react-icons/gr";
 function Contact() {
   return (
     <section
@@ -48,30 +49,38 @@ function Contact() {
           </button>
         </form>
       </div>
-      <div className="z-20 absolute bottom-0 text-sm  bg-[#373737] text-white w-full ">
-        <div className="flex justify-between">
-          <div className="flex justify-between w-[40%] rounded-tr-[30px] rounded-br-[30px] relative bottom-2 px-8 py-2 bg-orange-600">
+      <div className="z-20 absolute bottom-0 text-sm flex py-1 flex-col-reverse  bg-[#373737] text-white w-full ">
+        <div className="flex flex-col">
+          {/* <div className=" flex justify-between items-center md:grid grid-cols-2 gap-1 text-xs rounded-tr-[30px] rounded-br-[30px] relative bottom-2 px-8 py-1 my-1 bg-orange-600">
             <span>
               <strong>
                 Call us: <a href="tel:+919739561394">+91 97395-61394</a> &nbsp;{" "}
               </strong>
             </span>
             <span>
-              <a href="mailto:info@top-one-percent.com">
+              <a
+                className="hidden md:block"
+                href="mailto:info@top-one-percent.com"
+              >
                 info@top-one-percent.com
               </a>
+              <a href="mailto:info@top-one-percent.com">
+                <GrMail fill="white" size={20} />
+              </a>
             </span>
-          </div>
-          <div className="pr-4">
+          </div> */}
+          <div className="pr-4 text-[11px] md:text-[14px] text-center ">
             Copyright © 2022 BOLD Education Pvt. Ltd. All Rights Reserved.
           </div>
         </div>
-        <div className="flex my-2  justify-center space-x-4">
-          <FaFacebookF size={25} color="white" />
-          <FaYoutube size={25} color="white" />
-          <FaInstagram size={25} color="white" />
-          <FaLinkedin size={25} color="white" />
-          {/* <FaGooglePlusG size={20} color="white" /> */}
+        <div className="flex my-1 cursor-pointer justify-center space-x-4">
+          <FaFacebookF size={15} color="white" />
+          <FaYoutube size={15} color="white" />
+          <FaInstagram size={15} color="white" />
+          <FaLinkedin size={15} color="white" />
+          <a href="mailto:info@top-one-percent.com">
+            <GrMail fill="white" size={15} />
+          </a>
         </div>
       </div>
     </section>

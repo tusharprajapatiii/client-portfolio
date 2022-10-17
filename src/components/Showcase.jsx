@@ -58,7 +58,7 @@ function Showcase() {
             />
           </div>
           <div className="flex justify-center -mt-12 ">
-            <button className=" px-3 font-semibold text-slate-100 py-2 rounded-xl bg-orange-600 ">
+            <button className=" px-3 font-semibold text-slate-100 py-2 rounded-xl bg-[#ff9d01] ">
               CONTACT US
             </button>
           </div>
@@ -76,10 +76,10 @@ function Showcase() {
             Else, leave this page right now!
           </p>
           <div class="hidden md:block space-x-4 ">
-            <button class="px-3 py-2 bg-orange-500 text-slate-100 rounded-2xl">
+            <button class="px-3 py-2 bg-[#ff9d01] text-slate-100 rounded-2xl">
               CONTACT US
             </button>
-            <button class="px-3 py-2 rounded-2xl text-slate-100 bg-orange-500">
+            <button class="px-3 py-2 rounded-2xl text-slate-100 bg-[#ff9d01]">
               BOOK DEMO
             </button>
           </div>

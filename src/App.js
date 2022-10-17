@@ -21,7 +21,7 @@ function App() {
         <Start />
         <Showcase />
         <Video />
-        {/* <Road /> */}
+        <Road />
         <Writing />
         <Sliders />
         <Contact />

@@ -35,11 +35,14 @@ function Writing() {
       setHide(false);
     }
   }, [inView, hide]);
+
   return (
     <section
       ref={ref}
       className={`md:flex scroll-area md:py-2 lg:py-2 relative ${
         hide ? "overflow-y-auto" : "overflow-y-hidden"
+      } ${
+        (gmat || gre) && "overlay"
       } lg:max-h-screen overflow-x-hidden  px-4 bg-blue-100 py-8 md:bg-white`}
     >
       <div className="lg:h-full lg:w-[25vw] relative md:basis-[37%] lg:basis-[30%]">
@@ -50,14 +53,18 @@ function Writing() {
         />
         <motion.div
           animate={animation}
-          className="hidden relative md:block h-full w-full"
+          className={"hidden relative md:block h-full w-full"}
         >
           <motion.img
-            className="  h-full w-full"
+            className={` ${(gmat || gre) && "overlay"} h-full w-full`}
             src={sand}
             alt="Sandeep Gupta"
           />
-          <span className=" hidden lg:block absolute py-[5%] text-white bottom-[6.5%] mx-auto text-xs rounded-3xl bg-blue-600 px-[13%] right-[24%]">
+          <span
+            className={
+              " hidden lg:block absolute py-[6%] text-white bottom-[6%] mx-auto text-xs rounded-3xl bg-blue-500 px-[15%] right-[22%]"
+            }
+          >
             Meet Your Mentor
           </span>
         </motion.div>
@@ -65,7 +72,7 @@ function Writing() {
       {/* <h1 className="text-center cursive md:hidden py-3">
         a note from sandeep gupta
       </h1> */}
-      <div className="text-[12px]   md:basis-[63%] lg:basis-[70%] lg:h-[95%] lg:my-auto  line tracking-wider md:tracking-widest md:border-t-3 lg:text-sm xl:text-sm relative md:rounded-bl-[50px] md:text-xs  md:box md:border-t-4  md:border-blue-400 xl:py-3  md:px-6 md:py-4 px-2">
+      <div className="text-[12px]   md:basis-[63%] lg:basis-[70%] lg:h-[95%] lg:my-auto  line tracking-wider md:tracking-widest md:border-t-3 lg:text-sm xl:text-sm relative md:rounded-bl-[50px] md:text-xs  md:box md:border-t-4  md:border-blue-400 xl:py-6  md:px-6 md:py-4 px-2">
         <p className="mt-2">
           Hi, This is Sandeep Gupta, the foremost GMAT / GRE Trainer in Asia
           with perfect scores on both GMAT and GRE exams.
@@ -124,7 +131,8 @@ function Writing() {
           like Harvard, Stanford, MIT, and every other top university in the
           world for MBA, MS, and Ph.D. programs.
         </p>
-        <p className="">
+
+        <p className="mt-3">
           The biggest strength of my teaching is that I am able to transfer my
           “Success-DNA” to my students – I repeat: my biggest achievement is not
           that I have scored the perfect scores on the GMAT/GRE multiple times
@@ -162,17 +170,24 @@ function Writing() {
         used (OCTAVE, CLESSSP, PRIME, ACT, ANT, ACED, LINGO, and TRAPS), my
         students have been able to get similar successes on more than 20,000
         occasions. */}
-        <div className=" hidden lg:block md:top-6 md:text-base lg:text-xl xl:top-12  left-0 relative cursive text-center  xl:text-2xl">
+        <button
+          className={`hidden ${
+            hide
+              ? "bg-blue-500 text-white delay-[1000ms] transition-[2000ms]  "
+              : "text-black"
+          }    lg:block text-sm max-w-max mx-auto md:top-6 md:text-base  lg:text-xl xl:top-7 rounded-3xl  px-3 py-1 relative  text-center  xl:text-2xl`}
+        >
           {" "}
           <Typewriter
             options={{
               strings: "Request a live demo session with Sandeep",
               autoStart: inView,
+              wrapperClassName: "typewriter",
               cursor: " ",
               delay: 50,
             }}
           />
-        </div>
+        </button>
       </div>
       {gmat && <ScoreModal gmat={gmat} setGmat={setGmat} Score={GMAT} />}
       {gre && <ScoreModal gre={gre} setGre={setGre} Score={GRE} />}

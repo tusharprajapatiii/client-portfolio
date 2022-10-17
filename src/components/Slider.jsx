@@ -108,7 +108,7 @@ function Sliders() {
       >
         {name}
       </motion.div> */}
-      <div className="absolute md:h-2 bg-black h-1 right-5 abs w-1/5 md:w-[27%] md:bottom-52 bottom-[254px]  z-20 " />
+      <div className="absolute md:h-2 bg-black h-1 right-5 abs w-1/5 md:w-[27%] md:bottom-60 bottom-[254px]  z-20 " />
       <div className="  ">
         <Slider {...settings}>
           {people.map((people, i) => (
@@ -134,7 +134,7 @@ function Sliders() {
               >
                 {people.name}
               </motion.div>
-              <div className=" absolute top-28 lg:top-[330px] left-2 md:left-[20%] lg:-left-20 ">
+              <div className=" absolute top-28 lg:top-[330px] xl:font-semibold left-2 md:left-[20%] lg:-left-[120px] ">
                 <h1 className="underline text-base md:text-xl  underline-offset-4">
                   {people.name}
                 </h1>
@@ -147,15 +147,22 @@ function Sliders() {
                   className="absolute left-4  -top-4 h-14 w-14"
                   src={people.imageC}
                 />
-                <div className="relative left-20 text-sm">{people.name}</div>
-                <div className="text-[8px] relative top-6">{people.name}</div>
+                <div className="relative left-20 lg:top-1 text-sm lg:text-base">
+                  {people.name}
+                </div>
+                <div className="text-[8px] h-full relative top-6">
+                  <img
+                    className="w-3/4 h-1/2 m-auto"
+                    src={people.college}
+                    alt={people.college}
+                  />
+                </div>
                 {/* <AiFillRightCircle className="absolute top-1/2 -right-2" /> */}
               </article>
-              <div className=" xl:block absolute hidden md:-right-[120%] xl:-right-[100%] bottom-[50%]">
+              <div className=" xl:block mx-auto -left-[50%]  -z-10   w-[200%] absolute hidden  bottom-[10%]">
                 <img
-                  className="w-1/2"
+                  className=" w-full opacity-20  h-64"
                   src={people.college}
-                  alt={people.college}
                 />
               </div>
             </div>
