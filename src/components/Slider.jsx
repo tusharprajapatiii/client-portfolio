@@ -86,7 +86,7 @@ function Sliders() {
   }, [inView]);
   return (
     <section ref={ref} className="py-8 md:py-4  relative scroll-area">
-      <div className=" bg-black h-1 md:h-2 relative top-24 md:left-10 left-4 w-1/4 md:w-1/3   "></div>
+      {/* <div className=" absolute md:h-[7px] bg-black h-1 left-2 abs w-1/5 md:w-[30%] 2xl:w-[30%] xl:w-[20%] md:bottom-[244px] xl:top-[53%] bottom-[254px]  z-20  "></div> */}
       {/* {people.map((people, i) => {
         const { name, image } = people;
         return (
@@ -108,8 +108,10 @@ function Sliders() {
       >
         {name}
       </motion.div> */}
-      <div className="absolute md:h-2 bg-black h-1 right-5 abs w-1/5 md:w-[27%] md:bottom-60 bottom-[254px]  z-20 " />
-      <div className="  ">
+      {/* <div className="absolute md:h-[7px] bg-black h-1 right-5 abs w-1/5 md:w-[30%] md:bottom-[244px] xl:bottom-[53%] bottom-[258px]  z-20 " /> */}
+      <div className=" relative ">
+        <div className=" absolute md:h-[7px] bg-black h-1 left-2 abs w-1/5 md:w-[30%]  xl:w-[30%] md:bottom-[244px] xl:top-[47%] bottom-[200px] md:hidden xl:block  z-20  "></div>
+        <div className="absolute md:h-[7px] bg-black h-1 right-5 abs w-1/5 md:w-[30%] md:bottom-[244px] xl:bottom-[53%] bottom-[200px] md:hidden  z-20 xl:block" />
         <Slider {...settings}>
           {people.map((people, i) => (
             <div
@@ -130,16 +132,16 @@ function Sliders() {
                 animate={animation2}
                 className={`${
                   index !== i && "opacity-0 "
-                } text-5xl flex justify-center absolute  -z-10  left-0 md:text-[200px] opacity-100 name tracking-widest whitespace-nowrap text-center w-full bg-transparent font-bold  text-shadow top-24 `}
+                } text-[100px] flex justify-center absolute  -z-10  left-0 md:text-[200px] opacity-100 name tracking-widest whitespace-nowrap text-center w-full bg-transparent font-semibold  text-shadow top-[20px] `}
               >
                 {people.name}
               </motion.div>
-              <div className=" absolute top-28 lg:top-[330px] xl:font-semibold left-2 md:left-[20%] lg:-left-[120px] ">
+              {/* <div className=" absolute top-28 lg:top-[330px] xl:font-semibold left-2 md:left-[20%] lg:-left-[120px] ">
                 <h1 className="underline text-base md:text-xl  underline-offset-4">
                   {people.name}
                 </h1>
                 <p>{people.name}</p>
-              </div>
+              </div> */}
 
               <article className="w-[70%]  md:w-1/2 lg:w-[75%]  xl:h-36 shadow-2xl z-10 bg-slate-100 rounded-lg transition-all delay-300 ease-linear top-2 border-2 h-32 mx-auto xl:-top-32 md:-top-20 relative">
                 {/* <AiFillLeftCircle className="absolute top-1/2 -left-2" /> */}
@@ -147,7 +149,7 @@ function Sliders() {
                   className="absolute left-4  -top-4 h-14 w-14"
                   src={people.imageC}
                 />
-                <div className="relative left-20 lg:top-1 text-sm lg:text-base">
+                <div className="relative left-20 lg:top-2 lg:font-semibold text-sm lg:text-[16px] tracking-wider">
                   {people.name}
                 </div>
                 <div className="text-[8px] h-full relative top-6">

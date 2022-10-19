@@ -26,11 +26,12 @@
   background-blend-mode: overlay;
   background-size: "cover";
 }
-/* dots {
+.dots {
   position: absolute;
   top: 0;
   left: 0;
-} */
+  background-color: white;
+}
 .bg1 {
   background-image: url("");
   background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
@@ -39,6 +40,10 @@
 }
 .typewriter {
   font-size: medium;
+}
+.year {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
 }
 @media screen and (min-width: 1024px) {
   .slide {

@@ -9,6 +9,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useState } from "react";
 import ScoreModal from "./ScoreModal";
 import "./slide.css";
+import { FaLinkedin } from "react-icons/fa";
 
 function Writing() {
   const [gmat, setGmat] = useState(false);
@@ -62,10 +63,13 @@ function Writing() {
           />
           <span
             className={
-              " hidden lg:block absolute py-[6%] text-white bottom-[6%] mx-auto text-xs rounded-3xl bg-blue-500 px-[15%] right-[22%]"
+              " hidden lg:flex absolute py-[6%] text-white bottom-[6%] mx-auto text-xs rounded-3xl bg-blue-500 px-[14%] right-[19%]"
             }
           >
-            Meet Your Mentor
+            <h1>Meet Your Mentor</h1>
+            <span className="ml-2 cursor-pointer">
+              <FaLinkedin size={18} color="white" />
+            </span>
           </span>
         </motion.div>
       </div>

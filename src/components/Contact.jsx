@@ -6,6 +6,7 @@ import {
   FaWhatsapp,
   FaGooglePlusG,
   FaLinkedin,
+  FaPhone,
   FaInstagram,
   FaMailchimp,
 } from "react-icons/fa";
@@ -48,6 +49,17 @@ function Contact() {
             DOWNLOAD NOW
           </button>
         </form>
+        <div className="xl:flex hidden   mt-8 z-50 cursor-pointer justify-center space-x-4">
+          <FaFacebookF size={18} color="blue" />
+          <FaYoutube size={18} color="red" />
+          <FaInstagram size={18} fill="purple" />
+          <FaLinkedin size={18} color="blue" />
+          <a href="mailto:info@top-one-percent.com">
+            <GrMail fill="red" size={18} />
+          </a>
+
+          <FaPhone size={18} color="blue" />
+        </div>
       </div>
       <div className="z-20 absolute bottom-0 text-sm flex py-1 flex-col-reverse  bg-[#373737] text-white w-full ">
         <div className="flex flex-col">
@@ -72,15 +84,6 @@ function Contact() {
           <div className="pr-4 text-[11px] md:text-[14px] text-center ">
             Copyright © 2022 BOLD Education Pvt. Ltd. All Rights Reserved.
           </div>
-        </div>
-        <div className="flex my-1 cursor-pointer justify-center space-x-4">
-          <FaFacebookF size={15} color="white" />
-          <FaYoutube size={15} color="white" />
-          <FaInstagram size={15} color="white" />
-          <FaLinkedin size={15} color="white" />
-          <a href="mailto:info@top-one-percent.com">
-            <GrMail fill="white" size={15} />
-          </a>
         </div>
       </div>
     </section>

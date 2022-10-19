@@ -22,7 +22,7 @@ const people = [
     id: 1,
     image: vinod,
     imageC: vinodC,
-    name: "vinod A",
+    name: "Vinod A",
     college: NYU,
   },
   {
