@@ -107,7 +107,7 @@ function Road() {
                 <div
                   className={` ${
                     i == video ? "opacity-100" : "opacity-0"
-                  } absolute top-0 h-full hidden transition-opacity font-extrabold duration-[2500ms] ease-linear year -right-4 2xl:right-[10%]   text-[#ff9d01]   xl:flex justify-center items-center 2xl:text-[90px] text-[78px]`}
+                  } absolute top-0 h-full hidden transition-opacity font-extrabold duration-[2500ms] ease-linear year -right-4 2xl:right-[10%]   text-black   xl:flex justify-center items-center 2xl:text-[90px] text-[78px]`}
                 >
                   {v.year}{" "}
                 </div>
@@ -285,11 +285,11 @@ function Road() {
             </span>
           )}
           <div className="absolute w-[32%] right-10 bottom-20">
-            <div className="text-white text-right ">where it all started</div>
+            <div className="text-white text-right ">Our first 770 Scorer</div>
             <div className="h-1  bg-white"></div>
           </div>
           <div className="absolute w-[32%] right-[40%]  text-white bottom-[75px]">
-            <h6 className="relative text-center top-4">Our first 770 scorer</h6>
+            <h6 className="relative text-center top-4"></h6>
             <div className="tracking-[16px] text-right text-lg">...</div>
           </div>
         </div>
