@@ -177,8 +177,10 @@ function Road() {
                   : " opacity-60"
               } left-[23%] w-fit bottom-20  transition-all ease-in delay-200 absolute`}
             >
-              <img className="h-[67px] w-[66px]" src={location2} alt="" />
-              <h4 className="relative bottom-[50px] left-[28%]">2007</h4>
+              <img className="h-[76px] w-[64px]" src={location2} alt="" />
+              <h4 className="relative text-sm bottom-[57px] left-[25%]">
+                2007
+              </h4>
             </span>
           ) : (
             <span
@@ -188,8 +190,10 @@ function Road() {
                   : " opacity-60"
               } left-[23%] w-fit bottom-20  transition-all ease-in delay-200 absolute`}
             >
-              <img className="h-[67px] w-[66px]" src={location} alt="" />
-              <h4 className="relative bottom-[50px] left-[28%]">2007</h4>
+              <img className="h-[76px] w-[64px]" src={location} alt="" />
+              <h4 className="relative text-[15px] bottom-[57px] left-[25%]">
+                2007
+              </h4>
             </span>
           )}
           {video === (1 || 6 || 11) ? (
@@ -270,7 +274,7 @@ function Road() {
               } right-[50%] w-fit top-6  transition-all ease-in delay-200  absolute`}
             >
               <img className="h-14 w-18" src={location2} alt="" />
-              <h4 className="relative text-sm bottom-[45px] left-2">2022</h4>
+              <h4 className="relative  bottom-[45px] left-2">2022</h4>
             </span>
           ) : (
             <span
@@ -281,7 +285,7 @@ function Road() {
               } right-[50%] w-fit top-6  transition-all ease-in delay-200  absolute`}
             >
               <img className="h-14 w-18" src={location} alt="" />
-              <h4 className="relative text-sm bottom-[45px] left-2">2022</h4>
+              <h4 className="relative  bottom-[45px] left-2">2022</h4>
             </span>
           )}
           <div className="absolute w-[32%] right-10 bottom-20">
