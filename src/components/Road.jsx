@@ -172,12 +172,10 @@ function Road() {
           >
             2022
           </div> */}
-          {video === (0 || 5 || 10 || 15) ? (
+          {video === 0 ? (
             <span
               className={`  ${
-                video === (0 || 5 || 10 || 15)
-                  ? "  opacity-100 p-1 lg:p-3"
-                  : " opacity-60"
+                video === 0 ? "  opacity-100 p-1 lg:p-3" : " opacity-60"
               } left-[23%] w-fit bottom-20  transition-all ease-in delay-200 absolute`}
             >
               <img className="h-[76px] w-[64px]" src={location2} alt="" />
@@ -188,9 +186,7 @@ function Road() {
           ) : (
             <span
               className={`  ${
-                video === (0 || 5 || 10 || 15)
-                  ? "  opacity-100 p-1 lg:p-3"
-                  : " opacity-60"
+                video === 0 ? "  opacity-100 p-1 lg:p-3" : " opacity-60"
               } left-[23%] w-fit bottom-20  transition-all ease-in delay-200 absolute`}
             >
               <img className="h-[76px] w-[64px]" src={location} alt="" />
@@ -199,12 +195,10 @@ function Road() {
               </h4>
             </span>
           )}
-          {video === (1 || 6 || 11) ? (
+          {video === 1 ? (
             <span
               className={` ${
-                video === (1 || 6 || 11)
-                  ? "  opacity-100 p-1 lg:p-3"
-                  : " opacity-60"
+                video === 1 ? "  opacity-100 p-1 lg:p-3" : " opacity-60"
               } right-[35%] w-fit bottom-[38%]  transition-all ease-in delay-200  absolute`}
             >
               <img className="h-16 w-18" src={location2} alt="" />
@@ -213,21 +207,17 @@ function Road() {
           ) : (
             <span
               className={` ${
-                video === (1 || 6 || 11)
-                  ? "  opacity-100 p-1 lg:p-3"
-                  : " opacity-60"
+                video === 1 ? "  opacity-100 p-1 lg:p-3" : " opacity-60"
               } right-[35%] w-fit bottom-[38%]  transition-all ease-in delay-200  absolute`}
             >
               <img className="h-16 w-18" src={location} alt="" />
               <h4 className="relative bottom-[50px] left-3">2011</h4>
             </span>
           )}
-          {video === (2 || 7 || 12) ? (
+          {video === 2 ? (
             <span
               className={`${
-                video === (2 || 7 || 12)
-                  ? "  opacity-100 p-1 lg:p-3"
-                  : " opacity-60"
+                video === 2 ? "  opacity-100 p-1 lg:p-3" : " opacity-60"
               } left-[25%] w-fit bottom-[55%]  transition-all ease-in delay-200  absolute`}
             >
               <img className="h-16 w-18" src={location2} alt="" />
@@ -236,21 +226,17 @@ function Road() {
           ) : (
             <span
               className={`${
-                video === (2 || 7 || 12)
-                  ? "  opacity-100 p-1 lg:p-3"
-                  : " opacity-60"
+                video === 2 ? "  opacity-100 p-1 lg:p-3" : " opacity-60"
               } left-[25%] w-fit bottom-[55%]  transition-all ease-in delay-200  absolute`}
             >
               <img className="h-16 w-18" src={location} alt="" />
               <h4 className="relative bottom-[50px] left-3">2015</h4>
             </span>
           )}
-          {video === (3 || 8 || 13) ? (
+          {video === 3 ? (
             <span
               className={`${
-                video === (3 || 8 || 13)
-                  ? " opacity-100 p-1 lg:p-2"
-                  : " opacity-60"
+                video === 3 ? " opacity-100 p-1 lg:p-2" : " opacity-60"
               } right-[29%] w-fit top-24  transition-all ease-in delay-200 absolute`}
             >
               <img className="h-16 w-18" src={location2} alt="" />
@@ -259,21 +245,17 @@ function Road() {
           ) : (
             <span
               className={`${
-                video === (3 || 8 || 13)
-                  ? " opacity-100 p-1 lg:p-2"
-                  : " opacity-60"
+                video === 3 ? " opacity-100 p-1 lg:p-2" : " opacity-60"
               } right-[29%] w-fit top-[80px]  transition-all ease-in delay-200 absolute`}
             >
               <img className="h-16 w-18" src={location} alt="" />
               <h4 className="relative bottom-[50px] left-3">2019</h4>
             </span>
           )}
-          {video === (4 || 9 || 14) ? (
+          {video === 4 ? (
             <span
               className={` ${
-                video === (4 || 9 || 14)
-                  ? " opacity-100 p-1 lg:p-3"
-                  : "opacity-60"
+                video === 4 ? " opacity-100 p-1 lg:p-3" : "opacity-60"
               } right-[50%] w-fit top-6  transition-all ease-in delay-200  absolute`}
             >
               <img className="h-14 w-18" src={location2} alt="" />
@@ -282,9 +264,7 @@ function Road() {
           ) : (
             <span
               className={` ${
-                video === (4 || 9 || 14)
-                  ? " opacity-100 p-1 lg:p-3"
-                  : "opacity-60"
+                video === 4 ? " opacity-100 p-1 lg:p-3" : "opacity-60"
               } right-[50%] w-fit top-6  transition-all ease-in delay-200  absolute`}
             >
               <img className="h-14 w-18" src={location} alt="" />
