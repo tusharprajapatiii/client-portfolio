@@ -28,7 +28,7 @@ function Start() {
         )}
       </div>
 
-      <motion.div
+      <div
         // animate={openMenu ? "show" : "close"}
         // variants={variants}
         // initial={{ y: -300 }}
@@ -91,7 +91,7 @@ function Start() {
             </button>
           </ul>
         </div>
-      </motion.div>
+      </div>
 
       <div className=" h-[540px] md:h-[450px]  lg:h-full  flex flex-col">
         <div className="flex justify-between relative pt-8 items-start px-8">
