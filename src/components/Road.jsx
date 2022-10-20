@@ -88,7 +88,7 @@ function Road() {
           {videos.map((v, i) => {
             return (
               <div className="relative h-full">
-                <div className="border cursor-pointer relative border-red-400 h-[550px] lg:h-[90vh] lg:w-[70%]  m-auto w-full  right-0 rounded-xl bg-[#ff9d01]  p-3">
+                <div className="border cursor-pointer relative border-red-400 h-[550px] lg:h-[90vh] lg:w-[70%] 2xl:w-[60%]  m-auto w-full  right-0 rounded-xl bg-[#ff9d01]  p-3">
                   <iframe
                     title="Rankers video"
                     height={220}
