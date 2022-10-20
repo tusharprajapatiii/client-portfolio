@@ -76,16 +76,19 @@ function Road() {
   }, [video]);
 
   return (
-    <section className={`back scroll-area md:flex relative items-center py-8`}>
-      <div className=" relative md:absolute text-white top-0 text-xl md:text-2xl font-bold left-[5%] py-2 z-20 bg-black">
+    <section
+      id="Success"
+      className={`back scroll-area md:flex relative items-center py-8`}
+    >
+      <div className=" relative md:absolute text-white top-0 text-xl md:text-[22px] px-2 font-bold md:left-0  lg:left-[5%] py-2 z-20 bg-black">
         15 YEARS OF SUCCESSFULLY PRODUCING 770 SCORES AND COUNTING...{" "}
       </div>
-      <div className="w-full md:w-[44%]  basis-[55%] my-2  pl-5  h-full ">
+      <div className="w-full md:w-[44%] mx-auto  basis-[55%] my-2  md:pl-5   ">
         <Slider {...settings}>
           {videos.map((v, i) => {
             return (
-              <div className="relative">
-                <div className="border cursor-pointer relative border-red-400 h-[88vh] m-auto w-[500px]  right-0 rounded-xl bg-[#ff9d01]  p-3">
+              <div className="relative h-full">
+                <div className="border cursor-pointer relative border-red-400 h-[550px] lg:h-[90vh] lg:w-[70%]  m-auto w-full  right-0 rounded-xl bg-[#ff9d01]  p-3">
                   <iframe
                     title="Rankers video"
                     height={220}
@@ -116,7 +119,7 @@ function Road() {
           })}
         </Slider>
       </div>
-      <div className=" hidden basis-[45%]  md:block">
+      <div className=" hidden basis-[45%] h-full  lg:block">
         <div className="relative text-[13px] font-semibold py-8 my-2">
           <div className="absolute left-[18%] top-8"></div>
           <img className="h-[90%] lg:h-[90vh] w-full  " src={road} alt="road" />

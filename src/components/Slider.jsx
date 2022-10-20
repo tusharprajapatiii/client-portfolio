@@ -85,7 +85,14 @@ function Sliders() {
     }
   }, [inView]);
   return (
-    <section ref={ref} className="py-8 md:py-4  relative scroll-area">
+    <section
+      id="Slider"
+      ref={ref}
+      className="py-8 md:py-0  relative scroll-area"
+    >
+      <h1 className="bg-black text-[120%] md:text-[180%]  font-extrabold tracking-[0.2em] py-3 text-center text-white ">
+        RECENT ADMITS
+      </h1>
       {/* <div className=" absolute md:h-[7px] bg-black h-1 left-2 abs w-1/5 md:w-[30%] 2xl:w-[30%] xl:w-[20%] md:bottom-[244px] xl:top-[53%] bottom-[254px]  z-20  "></div> */}
       {/* {people.map((people, i) => {
         const { name, image } = people;

@@ -28,7 +28,7 @@ function Video() {
     }
   }, [inView]);
   return (
-    <section ref={ref} className="scroll-area">
+    <section id="Video" ref={ref} className="scroll-area">
       <div className="md:m-6 py-10 md:flex w-full h-full">
         <div className=" shadow-2xl box lg:basis-[55%] md:w-[60vw]  lg:h-[85vh] h-[300px] md:h-[360px]   rounded-3xl p-[2px]   ">
           <motion.iframe

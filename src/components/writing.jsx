@@ -39,6 +39,7 @@ function Writing() {
 
   return (
     <section
+      id="About"
       ref={ref}
       className={`md:flex scroll-area md:py-2 lg:py-2 relative ${
         hide ? "overflow-y-auto" : "overflow-y-hidden"
@@ -68,7 +69,12 @@ function Writing() {
           >
             <h1>Meet Your Mentor</h1>
             <span className="ml-2 cursor-pointer">
-              <FaLinkedin size={18} color="white" />
+              <a
+                target="_blank"
+                href=" https://www.linkedin.com/in/sandeep-gupta-gmat-800-gre-340/"
+              >
+                <FaLinkedin size={18} color="white" />
+              </a>
             </span>
           </span>
         </motion.div>
