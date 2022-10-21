@@ -17,14 +17,6 @@ function Start() {
   const [openDemo, setOpenDemo] = useState(false);
   return (
     <section id="Start" className="bg-[#FF9D01] scroll-area relative">
-      <div className="absolute bottom-[23%] hidden xl:block 2xl:text-[60px] 2xl:bottom-[20%] 2xl:tracking-[0.1.8em] leading-[80px] left-[3%] text-shadow-1 xl:text-[52px] font-extrabold text-white max-w-[33%] px-4  ">
-        This is the START to yours{" "}
-        <span className="text-blue-600 text-shadow-1 xl:text-[52px] font-[900]">
-          {" "}
-          99th Percentile
-        </span>{" "}
-        Score
-      </div>
       <div className="absolute top-4 right-4 rounded-md  border-2 bg-inherit border-white md:hidden  ">
         {!openMenu && (
           <GiHamburgerMenu
