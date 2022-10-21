@@ -273,7 +273,7 @@ function Start() {
           </div>
         </div>
       )}
-      <h2 className="absolute uppercase hidden xl:block xl:-tracking-normal text-blue-800 bottom-3 text-lg xl:text-xl text-center w-full xl:font-extrabold">
+      <h2 className="absolute uppercase hidden bold1 xl:block xl:-tracking-normal text-blue-800 bottom-3 text-lg xl:text-xl text-center w-full ">
         Is Acing your GMAT, stopping you from your Dream University?
       </h2>
     </section>
