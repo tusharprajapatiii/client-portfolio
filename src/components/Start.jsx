@@ -262,6 +262,11 @@ function Start() {
               <h3 className="text-lg 2xl:text-xl font-bold">
                 Transform Your Ivy-League Dream School Into Reality
               </h3>
+              <p>
+                The single call / demo appointment can change your entire
+                direction of your efforts towards the 99th percentile(760-800
+                range) score on the gmat{" "}
+              </p>
             </div>
             <span
               onClick={() => setOpenDemo(false)}
