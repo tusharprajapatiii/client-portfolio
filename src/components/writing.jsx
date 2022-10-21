@@ -89,7 +89,7 @@ function Writing() {
         </p>
         <div className="grid grid-rows-2 md:grid-cols-2 gap-2 md:flex my-4 xl:my-9  text-white font-bold text-[1.4rem] ">
           <div
-            className="md:h-[18vh] mx-auto flex flex-col items-center w-full md:w-[20vw]"
+            className="md:h-[110px] mx-auto flex flex-col items-center w-full md:w-[20vw]"
             style={{
               backgroundImage: `url(${GMAT})`,
               backgroundBlendMode: "overlay",
@@ -111,7 +111,7 @@ function Writing() {
             </button>
           </div>
           <div
-            className="md:h-[18vh] h-[100px] flex flex-col w-full items-center mx-auto md:w-[20vw]"
+            className="md:h-[110px] h-[100px] flex flex-col w-full items-center mx-auto md:w-[20vw]"
             style={{
               backgroundImage: `url(${GRE})`,
               backgroundBlendMode: "overlay",

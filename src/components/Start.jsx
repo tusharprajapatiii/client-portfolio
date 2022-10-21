@@ -14,9 +14,17 @@ const variants = {
 };
 function Start() {
   const [openMenu, setOpenMenu] = useState();
-
+  const [openDemo, setOpenDemo] = useState(false);
   return (
     <section id="Start" className="bg-[#FF9D01] scroll-area relative">
+      <div className="absolute bottom-[23%] hidden xl:block 2xl:text-[60px] 2xl:bottom-[20%] 2xl:tracking-[0.1.8em] leading-[80px] left-[3%] text-shadow-1 xl:text-[52px] font-extrabold text-white max-w-[33%] px-4  ">
+        This is the START to yours{" "}
+        <span className="text-blue-600 text-shadow-1 xl:text-[52px] font-[900]">
+          {" "}
+          99th Percentile
+        </span>{" "}
+        Score
+      </div>
       <div className="absolute top-4 right-4 rounded-md  border-2 bg-inherit border-white md:hidden  ">
         {!openMenu && (
           <GiHamburgerMenu
@@ -86,8 +94,11 @@ function Start() {
                 Contact Us
               </a>
             </li>
-            <button className="bg-blue-700  font-medium  shadow-blue-900 px-2 py-2 text-white  rounded-md">
-              Request a live demo with Sandeep
+            <button
+              onClick={() => setOpenDemo(true)}
+              className="bg-blue-700  font-medium  shadow-blue-900 px-2 py-2 text-white  rounded-md"
+            >
+              Request a Live Demo with Sandeep
             </button>
           </ul>
         </div>
@@ -125,8 +136,11 @@ function Start() {
                 <a href="#Contact">Contact Us</a>
               </li>
             </ul>
-            <button className="bg-blue-700 py-[6px] font-medium shadow-md shadow-blue-900 absolute top-[50%] text-white  right-2 xl:right-[2%] px-3 rounded-md">
-              Request a live demo with Sandeep
+            <button
+              onClick={() => setOpenDemo(true)}
+              className="bg-blue-700 py-[6px] font-medium shadow-md shadow-blue-900 absolute top-[50%] text-white  right-2 xl:right-[2%] px-3 rounded-md"
+            >
+              Request a Live Demo with Sandeep
             </button>
           </div>
         </div>
@@ -150,6 +164,114 @@ function Start() {
         </div>
         {/* <span className="sticky bottom-2 right-4">what</span> */}
       </div>
+      {openDemo && (
+        <div className="absolute h-screen w-full  flex justify-between  bg-black text-white top-0 left-0 xl:h-screen z-50">
+          <div className="w-full xl:w-[27vw] bg-[#FF9D01] ">
+            <span
+              onClick={() => setOpenDemo(false)}
+              className="py-2 px-3 text-xl font-bold bg-[#FF9D01] float-right xl:hidden text-white  "
+            >
+              X
+            </span>
+            <h3 className="lg:px-6 lg:text-lg my-4  px-12 font-semibold">
+              To Fix your Demo Appointment, Call / Whatsapp / Text immediately
+              to +9197395-61394
+            </h3>
+            <div className="h-full  text-center  ">
+              <form
+                className="flex max-w-lg mx-auto h-fit my-auto flex-col text-black py-8  lg:py-6 justify-between space-y-5 xl:space-y-3 px-8 bg-black "
+                action=""
+              >
+                <h2 className="text-2xl mb-2 text-white font-bold">
+                  Request for a Demo
+                </h2>
+
+                <input
+                  className="h-8 rounded-sm"
+                  type="text"
+                  placeholder="NAME"
+                />
+                <input
+                  className="h-8 rounded-sm"
+                  type="email"
+                  placeholder="email"
+                />
+                <input
+                  className="h-8 rounded-sm"
+                  type="number"
+                  placeholder="+91"
+                />
+                <input
+                  className="h-8 rounded-sm"
+                  type="tel"
+                  placeholder="Phone"
+                />
+                <input
+                  className="h-8 rounded-sm"
+                  type="text"
+                  placeholder="Select Course"
+                />
+                <input
+                  className="h-8 rounded-sm"
+                  type="text"
+                  placeholder="How did you hear about us"
+                />
+
+                <button className="bg-[#FF9D01] text-white w-fit mx-auto px-3 py-2 rounded-md">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+          <div className="xl:w-[73vw] hidden xl:block relative text-black bg-white">
+            <div className="text-center mt-2 py-5">
+              <h1 className="text-3xl 2xl:text-4xl font-bold">
+                This is the START to your 99%ile Score
+              </h1>
+              <h6 className="text-sm 2xl:text-base py-1">
+                Schedule a one-on-one Demo Session and a Call with Sandeep
+              </h6>
+            </div>
+            <div className="pl-20 2xl:text-xl pr-6">
+              <h3 className="text-lg 2xl:text-xl font-bold">
+                Let’s schedule your personalized demo + call with Sandeep
+              </h3>
+              <p>
+                We will call you briefly to understand you: your academic and
+                work background, your target score, your target b-schools /
+                universities, whether you are starting afresh or have had any
+                exposure to the test, your strong and weak areas, your timelines
+                etc.
+              </p>
+              <br />
+              <p>
+                In this call, we will try to understand how much time you can
+                spend per day or per week and guide you for your next plan of
+                action. We will suggest the right material for your specific
+                needs. We will also customize the entire GMAT preparation for
+                you.
+              </p>
+              <br />
+              <p>
+                Thereafter, we will take up all your questions / doubts /
+                queries, address them one by one, and guide you on the next
+                steps. Read Less
+              </p>
+              <br />
+              <p></p>
+              <h3 className="text-lg 2xl:text-xl font-bold">
+                Transform Your Ivy-League Dream School Into Reality
+              </h3>
+            </div>
+            <span
+              onClick={() => setOpenDemo(false)}
+              className="py-2 px-3 texxl font-bold cursor-pointer bg-[#FF9D01] absolute text-black right-4 top-0 "
+            >
+              X
+            </span>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

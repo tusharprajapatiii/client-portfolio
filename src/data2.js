@@ -101,14 +101,7 @@ const videos = [
     `,
     year: 2017,
   },
-  {
-    id: 12,
-    name: "Sushmitha Krishnamoorthy",
-    video: "https://youtube.com/embed/EITVSAJdSPQ",
-    content: `Was a part of the Self-paced course and with a custom-tailored plan to blend in with both work and undergrad, managed to score a marvelous 770 in her first attempt.  Her 2 months of hard work paid off as she was admitted to Cornell University. 
-    `,
-    year: 2018,
-  },
+
   {
     id: 13,
     name: "Rishabh Bansal",
@@ -133,22 +126,31 @@ const videos = [
     `,
     year: 2021,
   },
+
   {
     id: 16,
-    name: "Amit Kumar",
-    video: "https://youtube.com/embed/scJ86XX7vbc",
-    content: `In simple terms, an absolute GMAT sensation scoring a 770. If you feel you have hardships of any sort, then watch him and learn.
-    .
-    `,
-    year: 2021,
-  },
-  {
-    id: 17,
     name: "Anushka",
     video: "https://youtube.com/embed/zmO5Xhw5jSA",
     content: `Came to Top-One-Percent with a goal of a 680-700 score and an admit to ISB. She scored a jaw-dropping 780 and this has opened her gates to the crème de la crème of B-schools. Catch all the action about her preparation in detail..
     `,
     year: 2021,
+  },
+  {
+    id: 17,
+    name: "Amit Kumar",
+    video: "https://youtube.com/embed/scJ86XX7vbc",
+    content: `In simple terms, an absolute GMAT sensation scoring a 770. If you feel you have hardships of any sort, then watch him and learn.
+    .
+    `,
+    year: 2022,
+  },
+  {
+    id: 12,
+    name: "Sushmitha Krishnamoorthy",
+    video: "https://youtube.com/embed/EITVSAJdSPQ",
+    content: `Was a part of the Self-paced course and with a custom-tailored plan to blend in with both work and undergrad, managed to score a marvelous 770 in her first attempt.  Her 2 months of hard work paid off as she was admitted to Cornell University. 
+    `,
+    year: 2022,
   },
 ];
 export default videos;

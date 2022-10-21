@@ -4,9 +4,11 @@ import img2 from "../assets/pic-770.png";
 import img3 from "../assets/pic-780.png";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function Showcase() {
+  const [openDemo, setOpenDemo] = useState(false);
+
   const { ref, inView, entry } = useInView({
     /* Optional options */
   });
@@ -41,7 +43,7 @@ function Showcase() {
     }
   }, [inView]);
   return (
-    <section className="  scroll-area" ref={ref}>
+    <section className=" relative scroll-area" ref={ref}>
       <div className="md:flex my-6 md:py-16 overflow-hidden ">
         <div className="md:hidden">
           <div className="relative">
@@ -79,8 +81,11 @@ function Showcase() {
             <button class="px-3 py-2 bg-[#ff9d01] text-slate-100 rounded-2xl">
               CONTACT US
             </button>
-            <button class="px-3 py-2 rounded-2xl text-slate-100 bg-[#ff9d01]">
-              BOOK DEMO
+            <button
+              onClick={() => setOpenDemo(true)}
+              class="px-3 py-2 rounded-2xl text-slate-100 bg-[#ff9d01]"
+            >
+              LIVE DEMO
             </button>
           </div>
           {/* <h1 class="">DO YOU WANT A 99<sup>TH</sup>
@@ -108,6 +113,115 @@ function Showcase() {
           />
         </div>
       </div>
+
+      {openDemo && (
+        <div className="absolute h-screen w-full  flex justify-between  bg-black text-white top-0 left-0 xl:h-screen z-50">
+          <div className="w-full xl:w-[27vw] bg-[#FF9D01] ">
+            <span
+              onClick={() => setOpenDemo(false)}
+              className="py-2 px-3 text-xl font-bold bg-[#FF9D01] float-right xl:hidden text-white  "
+            >
+              X
+            </span>
+            <h3 className="lg:px-6 lg:text-lg my-4  px-12 font-semibold">
+              To Fix your Demo Appointment, Call / Whatsapp / Text immediately
+              to +9197395-61394
+            </h3>
+            <div className="h-full  text-center  ">
+              <form
+                className="flex max-w-lg mx-auto h-fit my-auto flex-col text-black py-8  lg:py-6 justify-between space-y-5 xl:space-y-3 px-8 bg-black "
+                action=""
+              >
+                <h2 className="text-2xl mb-2 text-white font-bold">
+                  Request for a Demo
+                </h2>
+
+                <input
+                  className="h-8 rounded-sm"
+                  type="text"
+                  placeholder="NAME"
+                />
+                <input
+                  className="h-8 rounded-sm"
+                  type="email"
+                  placeholder="email"
+                />
+                <input
+                  className="h-8 rounded-sm"
+                  type="number"
+                  placeholder="+91"
+                />
+                <input
+                  className="h-8 rounded-sm"
+                  type="tel"
+                  placeholder="Phone"
+                />
+                <input
+                  className="h-8 rounded-sm"
+                  type="text"
+                  placeholder="Select Course"
+                />
+                <input
+                  className="h-8 rounded-sm"
+                  type="text"
+                  placeholder="How did you hear about us"
+                />
+
+                <button className="bg-[#FF9D01] text-white w-fit mx-auto px-3 py-2 rounded-md">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+          <div className="xl:w-[73vw] hidden xl:block relative text-black bg-white">
+            <div className="text-center mt-2 py-5">
+              <h1 className="text-3xl 2xl:text-4xl font-bold">
+                This is the START to your 99%ile Score
+              </h1>
+              <h6 className="text-sm 2xl:text-base py-1">
+                Schedule a one-on-one Demo Session and a Call with Sandeep
+              </h6>
+            </div>
+            <div className="pl-20 2xl:text-xl pr-6">
+              <h3 className="text-lg 2xl:text-xl font-bold">
+                Let’s schedule your personalized demo + call with Sandeep
+              </h3>
+              <p>
+                We will call you briefly to understand you: your academic and
+                work background, your target score, your target b-schools /
+                universities, whether you are starting afresh or have had any
+                exposure to the test, your strong and weak areas, your timelines
+                etc.
+              </p>
+              <br />
+              <p>
+                In this call, we will try to understand how much time you can
+                spend per day or per week and guide you for your next plan of
+                action. We will suggest the right material for your specific
+                needs. We will also customize the entire GMAT preparation for
+                you.
+              </p>
+              <br />
+              <p>
+                Thereafter, we will take up all your questions / doubts /
+                queries, address them one by one, and guide you on the next
+                steps. Read Less
+              </p>
+              <br />
+              <p></p>
+              <h3 className="text-lg 2xl:text-xl font-bold">
+                Transform Your Ivy-League Dream School Into Reality
+              </h3>
+            </div>
+            <span
+              onClick={() => setOpenDemo(false)}
+              className="py-2 px-3 texxl font-bold cursor-pointer bg-[#FF9D01] absolute text-black right-4 top-0 "
+            >
+              X
+            </span>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

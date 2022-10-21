@@ -92,16 +92,18 @@ function Road() {
                   <iframe
                     title="Rankers video"
                     height={220}
-                    className="relative top-3 w-full h-[70%]  border-red-500 border rounded-2xl"
+                    className="relative top-3 w-full h-[69%]  border-red-500 border rounded-2xl"
                     src={v.video}
                     frameborder="0"
                     autoplay
                   ></iframe>
-                  <div className="pt-3">
+                  <div className=" mt-5">
                     <h2 className="text-center font-semibold text-white">
                       {v.name}
                     </h2>
-                    <p className="text-xs mt-2 px-1 text-white">{v.content}</p>
+                    <p className="text-xs mt-3   px-1 text-white">
+                      {v.content}
+                    </p>
                   </div>
                   {/* <div className="absolute -bottom-1  -right-4 p-[4px] font-bold border-4 rounded-full  bg-white  border-red-600 ">
                     {v.year}
