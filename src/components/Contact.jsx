@@ -130,7 +130,7 @@ function Contact() {
               <FaLinkedin size={18} color="white" />
             </a>
             <a href="mailto:info@top-one-percent.com">
-              <GrMail fill="red" size={18} />
+              <GrMail fill="white" size={18} />
             </a>
             <a href="tel:+919739561394">
               <FaPhone size={18} color="white" />

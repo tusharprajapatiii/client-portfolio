@@ -60,7 +60,7 @@ function Video() {
             been able to deliver even perfect scores to our students and our
             testimonials talk for themselves.
           </motion.p>
-          <p className="mt-14 text-lg text-red-500 font-semibold">
+          <p className="xl:mt-12 mt-4 block font-medium  md:hidden xl:block text-sm xl:text-lg text-red-500 xl:font-semibold">
             If you find other GMAT/GRE institute or trainer even one-tenth as
             good anywhere in the country,{" "}
             <span className="text-blue-500">go and join there</span>

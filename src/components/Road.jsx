@@ -92,7 +92,7 @@ function Road() {
                   <iframe
                     title="Rankers video"
                     height={220}
-                    className="relative top-3 w-full h-[69%]  border-red-500 border rounded-2xl"
+                    className="relative top-3 w-full h-[67%]  border-red-500 border rounded-2xl"
                     src={v.video}
                     frameborder="0"
                     autoplay

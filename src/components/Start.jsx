@@ -273,7 +273,7 @@ function Start() {
           </div>
         </div>
       )}
-      <h2 className="absolute -tracking-[-0.15em] bottom-3 text-2xl text-center w-full text-white font-semibold">
+      <h2 className="absolute xl:-tracking-[-0.15em] bottom-3 text-lg xl:text-2xl text-center w-full text-white font-semibold">
         Acing your GMAT, stopping you from your Dream University?
       </h2>
     </section>
