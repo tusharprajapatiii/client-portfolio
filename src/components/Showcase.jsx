@@ -131,6 +131,7 @@ function Showcase() {
               <form
                 className="flex max-w-lg mx-auto h-fit my-auto flex-col text-black py-8  lg:py-6 justify-between space-y-5 xl:space-y-3 px-8 bg-black "
                 action=""
+                onSubmit={(e) => e.preventDefault()}
               >
                 <h2 className="text-2xl mb-2 text-white font-bold">
                   Request for a Demo
@@ -144,7 +145,7 @@ function Showcase() {
                 <input
                   className="h-8 rounded-sm"
                   type="email"
-                  placeholder="email"
+                  placeholder="EMAIL"
                 />
                 <input
                   className="h-8 rounded-sm"
@@ -167,7 +168,10 @@ function Showcase() {
                   placeholder="How did you hear about us"
                 />
 
-                <button className="bg-[#FF9D01] text-white w-fit mx-auto px-3 py-2 rounded-md">
+                <button
+                  type="submit"
+                  className="bg-[#FF9D01] text-white w-fit mx-auto px-3 py-2 rounded-md"
+                >
                   Submit
                 </button>
               </form>
@@ -205,13 +209,18 @@ function Showcase() {
               <p>
                 Thereafter, we will take up all your questions / doubts /
                 queries, address them one by one, and guide you on the next
-                steps. Read Less
+                steps.
               </p>
               <br />
               <p></p>
               <h3 className="text-lg 2xl:text-xl font-bold">
                 Transform Your Ivy-League Dream School Into Reality
               </h3>
+              <p>
+                The single call / demo appointment can change your entire
+                direction of your efforts towards the 99th percentile(760-800
+                range) score on the GMAT.
+              </p>
             </div>
             <span
               onClick={() => setOpenDemo(false)}

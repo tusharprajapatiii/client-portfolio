@@ -14,6 +14,8 @@ import { FaLinkedin } from "react-icons/fa";
 function Writing() {
   const [gmat, setGmat] = useState(false);
   const [gre, setGre] = useState(false);
+  const [openDemo, setOpenDemo] = useState(false);
+
   const [hide, setHide] = useState(false);
   const { ref, inView, entry } = useInView({
     /* Optional options */
@@ -181,6 +183,7 @@ function Writing() {
         students have been able to get similar successes on more than 20,000
         occasions. */}
         <button
+          onClick={() => setOpenDemo(true)}
           className={`hidden ${
             hide
               ? "bg-blue-500 text-white delay-[1000ms] transition-[2000ms]  "
@@ -201,6 +204,123 @@ function Writing() {
       </div>
       {gmat && <ScoreModal gmat={gmat} setGmat={setGmat} Score={GMAT} />}
       {gre && <ScoreModal gre={gre} setGre={setGre} Score={GRE} />}
+      {openDemo && (
+        <div className="absolute h-screen w-full  flex justify-between  bg-black text-white top-0 left-0 xl:h-screen z-50">
+          <div className="w-full xl:w-[27vw] bg-[#FF9D01] ">
+            <span
+              onClick={() => setOpenDemo(false)}
+              className="py-2 px-3 text-xl font-bold bg-[#FF9D01] float-right xl:hidden text-white  "
+            >
+              X
+            </span>
+            <h3 className="lg:px-6 lg:text-lg my-4  px-12 font-semibold">
+              To Fix your Demo Appointment, Call / Whatsapp / Text immediately
+              to +9197395-61394
+            </h3>
+            <div className="h-full  text-center  ">
+              <form
+                className="flex max-w-lg mx-auto h-fit my-auto flex-col text-black py-8  lg:py-6 justify-between space-y-5 xl:space-y-3 px-8 bg-black "
+                action=""
+                onSubmit={(e) => e.preventDefault()}
+              >
+                <h2 className="text-2xl mb-2 text-white font-bold">
+                  Request for a Demo
+                </h2>
+
+                <input
+                  className="h-8 rounded-sm"
+                  type="text"
+                  placeholder="NAME"
+                />
+                <input
+                  className="h-8 rounded-sm"
+                  type="email"
+                  placeholder="EMAIL"
+                />
+                <input
+                  className="h-8 rounded-sm"
+                  type="number"
+                  placeholder="+91"
+                />
+                <input
+                  className="h-8 rounded-sm"
+                  type="tel"
+                  placeholder="Phone"
+                />
+                <input
+                  className="h-8 rounded-sm"
+                  type="text"
+                  placeholder="Select Course"
+                />
+                <input
+                  className="h-8 rounded-sm"
+                  type="text"
+                  placeholder="How did you hear about us"
+                />
+
+                <button
+                  type="submit"
+                  className="bg-[#FF9D01] text-white w-fit mx-auto px-3 py-2 rounded-md"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+          <div className="xl:w-[73vw] hidden xl:block relative text-black bg-white">
+            <div className="text-center mt-2 py-5">
+              <h1 className="text-3xl 2xl:text-4xl font-bold">
+                This is the START to your 99%ile Score
+              </h1>
+              <h6 className="text-sm 2xl:text-base py-1">
+                Schedule a one-on-one Demo Session and a Call with Sandeep
+              </h6>
+            </div>
+            <div className="pl-20 2xl:text-xl pr-6">
+              <h3 className="text-lg 2xl:text-xl font-bold">
+                Let’s schedule your personalized demo + call with Sandeep
+              </h3>
+              <p>
+                We will call you briefly to understand you: your academic and
+                work background, your target score, your target b-schools /
+                universities, whether you are starting afresh or have had any
+                exposure to the test, your strong and weak areas, your timelines
+                etc.
+              </p>
+              <br />
+              <p>
+                In this call, we will try to understand how much time you can
+                spend per day or per week and guide you for your next plan of
+                action. We will suggest the right material for your specific
+                needs. We will also customize the entire GMAT preparation for
+                you.
+              </p>
+              <br />
+              <p>
+                Thereafter, we will take up all your questions / doubts /
+                queries, address them one by one, and guide you on the next
+                steps.
+              </p>
+              <br />
+              <p></p>
+              <h3 className="text-lg 2xl:text-xl font-bold">
+                Transform Your Ivy-League Dream School Into Reality
+              </h3>
+              <p>
+                The single call / demo appointment can change your entire
+                direction of your efforts towards the 99th percentile(760-800
+                range) score on the GMAT.
+              </p>
+            </div>
+            <span
+              onClick={() => setOpenDemo(false)}
+              className="py-2 px-3 texxl font-bold cursor-pointer bg-[#FF9D01] absolute text-black right-4 top-0 "
+            >
+              X
+            </span>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

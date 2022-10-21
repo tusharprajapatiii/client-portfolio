@@ -45,8 +45,8 @@ function Video() {
           ></motion.iframe>
         </div>
         <div className="px-8 xl:px-14 my-3 md:basis-[40%] lg:basis-[45%] ">
-          <h2 className="text-2xl lg:text-4xl text-center lg:font-extrabold my-2">
-            What is Mission 770?
+          <h2 className="text-2xl lg:text-3xl text-center lg:font-extrabold my-2">
+            What is Mission 770, you ask?
           </h2>
           <motion.p
             animate={animation2}
@@ -60,6 +60,11 @@ function Video() {
             been able to deliver even perfect scores to our students and our
             testimonials talk for themselves.
           </motion.p>
+          <p className="mt-14 text-lg text-red-500 font-semibold">
+            If you find other GMAT/GRE institute or trainer even one-tenth as
+            good anywhere in the country,{" "}
+            <span className="text-blue-500">go and join there</span>
+          </p>
         </div>
       </div>
     </section>
