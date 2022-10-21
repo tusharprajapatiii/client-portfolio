@@ -122,6 +122,7 @@ function Sliders() {
         <Slider {...settings}>
           {people.map((people, i) => (
             <div
+              key={people.id}
               animate={animation}
               className={
                 i === imageIndex

@@ -80,22 +80,20 @@ function Road() {
       id="Success"
       className={`back scroll-area md:flex relative items-center py-8`}
     >
-      <div className=" relative md:absolute text-white top-0 text-xl md:text-[22px] px-2 font-bold md:left-0  lg:left-[5%] py-2 z-20 bg-black">
+      <div className=" relative md:absolute text-white 2xl:text-3xl top-0 text-xl md:text-[22px] px-2 font-bold md:left-0  lg:left-[5%] py-2 z-20 bg-black">
         15 YEARS OF SUCCESSFULLY PRODUCING 770 SCORES AND COUNTING...{" "}
       </div>
       <div className="w-full md:w-[44%] mx-auto px-2 md:px-0 basis-[55%] my-2  md:pl-5   ">
         <Slider {...settings}>
           {videos.map((v, i) => {
             return (
-              <div className="relative h-full">
+              <div key={v.id} className="relative h-full">
                 <div className="border  cursor-pointer relative border-red-400 h-[550px] lg:h-[90vh] lg:w-[70%] 2xl:w-[60%]  m-auto w-full  right-0 rounded-xl bg-[#ff9d01]  p-3">
                   <iframe
                     title="Rankers video"
                     height={220}
                     className="relative top-3 w-full h-[67%]  border-red-500 border rounded-2xl"
                     src={v.video}
-                    frameborder="0"
-                    autoplay
                   ></iframe>
                   <div className=" mt-5">
                     <h2 className="text-center font-semibold text-white">

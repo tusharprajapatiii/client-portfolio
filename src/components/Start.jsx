@@ -273,8 +273,8 @@ function Start() {
           </div>
         </div>
       )}
-      <h2 className="absolute xl:-tracking-[-0.15em] bottom-3 text-lg xl:text-2xl text-center w-full text-white font-semibold">
-        Acing your GMAT, stopping you from your Dream University?
+      <h2 className="absolute uppercase hidden xl:block xl:-tracking-[-0.1em] text-blue-700 bottom-3 text-lg xl:text-xl text-center w-full xl:font-extrabold">
+        Is Acing your GMAT, stopping you from your Dream University?
       </h2>
     </section>
   );

@@ -47,16 +47,16 @@ function Showcase() {
       <div className="md:flex my-6 md:py-16 overflow-hidden ">
         <div className="md:hidden">
           <div className="relative">
-            <img className="h-52 mx-auto w-52" src={img1} alt="" />
+            <img className="h-52 mx-auto w-52" src={img1} alt="scorer" />
             <img
               className="h-36 w-36 right-10 absolute top-24"
               src={img3}
-              alt=""
+              alt="scorer"
             />
             <img
               className="h-40 w-40 -mt-28 relative left-10  "
               src={img2}
-              alt=""
+              alt="scorer"
             />
           </div>
           <div className="flex justify-center -mt-12 ">
@@ -77,13 +77,13 @@ function Showcase() {
             <br />
             Else, leave this page right now!
           </p>
-          <div class="hidden md:block space-x-4 ">
-            <button class="px-3 py-2 bg-[#ff9d01] text-slate-100 rounded-2xl">
+          <div className="hidden md:block space-x-4 ">
+            <button className="px-3 py-2 bg-[#ff9d01] text-slate-100 rounded-2xl">
               CONTACT US
             </button>
             <button
               onClick={() => setOpenDemo(true)}
-              class="px-3 py-2 rounded-2xl text-slate-100 bg-[#ff9d01]"
+              className="px-3 py-2 rounded-2xl text-slate-100 bg-[#ff9d01]"
             >
               LIVE DEMO
             </button>
