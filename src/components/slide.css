@@ -48,3 +48,9 @@
   text-shadow: 2px 0 #ff9d01, -2px 0 #ff9d01, 0 2px #ff9d01, 0 -2px #ff9d01,
     1px 1px #ff9d01, -1px -1px #ff9d01, 1px -1px #ff9d01, -1px 1px #ff9d01;
 }
+@media screen and (max-width: 768px) {
+  .background {
+    height: 600px !important ;
+    background-size: auto;
+  }
+}
