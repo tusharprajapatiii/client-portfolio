@@ -41,10 +41,12 @@
 .typewriter {
   font-size: medium;
 }
+.bold {
+  font-weight: 30px;
+}
 .year {
   writing-mode: vertical-rl;
   text-orientation: upright;
-
   text-shadow: 2px 0 #ff9d01, -2px 0 #ff9d01, 0 2px #ff9d01, 0 -2px #ff9d01,
     1px 1px #ff9d01, -1px -1px #ff9d01, 1px -1px #ff9d01, -1px 1px #ff9d01;
 }

@@ -3,7 +3,7 @@ import logo from "../assets/logo_main.png";
 import main from "../assets/Asset-1.png";
 import { AiOutlineClose } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
-
+import "./slide.css";
 import { motion } from "framer-motion";
 import { AiOutlineStar, AiFillStar } from "react-icons/ai";
 import { BsTwitter } from "react-icons/bs";
@@ -88,7 +88,7 @@ function Start() {
             </li>
             <button
               onClick={() => setOpenDemo(true)}
-              className="bg-blue-700  font-medium  shadow-blue-900 px-2 py-2 text-white  rounded-md"
+              className="bg-blue-800  font-medium  shadow-blue-900 px-2 py-2 text-white  rounded-md"
             >
               Request a Live Demo with Sandeep
             </button>
@@ -273,7 +273,7 @@ function Start() {
           </div>
         </div>
       )}
-      <h2 className="absolute uppercase hidden xl:block xl:-tracking-[-0.1em] text-blue-700 bottom-3 text-lg xl:text-xl text-center w-full xl:font-extrabold">
+      <h2 className="absolute uppercase hidden xl:block xl:-tracking-normal text-blue-800 bottom-3 text-lg xl:text-xl text-center w-full xl:font-extrabold">
         Is Acing your GMAT, stopping you from your Dream University?
       </h2>
     </section>
