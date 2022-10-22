@@ -10,6 +10,26 @@ import location2 from "../assets/location2.png";
 
 function Road() {
   const [video, setVideoIndex] = useState(0);
+  // const map= [0,1,2,3,4]
+  const [map, setMap] = useState(0);
+  useEffect(() => {
+    let slider = setInterval(() => {
+      setMap(map + 1);
+    }, 3000);
+
+    return () => {
+      clearInterval(slider);
+    };
+  }, [map]);
+  useEffect(() => {
+    const lastIndex = 4;
+    if (map < 0) {
+      setMap(lastIndex);
+    }
+    if (map > lastIndex) {
+      setMap(0);
+    }
+  }, [map]);
 
   const NextArrow = ({ onClick }) => {
     return (
@@ -80,7 +100,7 @@ function Road() {
       id="Success"
       className={`back scroll-area md:flex relative items-center py-8`}
     >
-      <div className=" relative md:absolute text-white 2xl:text-3xl top-0 text-xl md:text-[22px] px-2 font-bold md:left-0  lg:left-[5%] py-2 z-20 bg-black">
+      <div className=" relative md:absolute text-white 2xl:text-3xl top-0 text-xl md:text-[22px] px-2 font-bold md:left-0  lg:left-[5%] pb-2 z-20 bg-black">
         15 YEARS OF SUCCESSFULLY PRODUCING 770 SCORES AND COUNTING...{" "}
       </div>
       <div className="w-full md:w-[44%] mx-auto px-2 md:px-0 basis-[55%] my-2  md:pl-5   ">
@@ -172,10 +192,10 @@ function Road() {
           >
             2022
           </div> */}
-          {video === 0 ? (
+          {map === 0 ? (
             <span
               className={`  ${
-                video === 0 ? "  opacity-100 p-1 lg:p-3" : " opacity-60"
+                map === 0 ? "  opacity-100 p-1 lg:p-3" : " opacity-60"
               } left-[23%] w-fit bottom-20  transition-all ease-in delay-200 absolute`}
             >
               <img className="h-[76px] w-[64px]" src={location2} alt="" />
@@ -186,7 +206,7 @@ function Road() {
           ) : (
             <span
               className={`  ${
-                video === 0 ? "  opacity-100 p-1 lg:p-3" : " opacity-60"
+                map === 0 ? "  opacity-100 p-1 lg:p-3" : " opacity-60"
               } left-[23%] w-fit bottom-20  transition-all ease-in delay-200 absolute`}
             >
               <img className="h-[76px] w-[64px]" src={location} alt="" />
@@ -195,10 +215,10 @@ function Road() {
               </h4>
             </span>
           )}
-          {video === 1 ? (
+          {map === 1 ? (
             <span
               className={` ${
-                video === 1 ? "  opacity-100 p-1 lg:p-3" : " opacity-60"
+                map === 1 ? "  opacity-100 p-1 lg:p-3" : " opacity-60"
               } right-[35%] w-fit bottom-[38%]  transition-all ease-in delay-200  absolute`}
             >
               <img className="h-16 w-18" src={location2} alt="" />
@@ -207,17 +227,17 @@ function Road() {
           ) : (
             <span
               className={` ${
-                video === 1 ? "  opacity-100 p-1 lg:p-3" : " opacity-60"
+                map === 1 ? " opacity-100 p-1 lg:p-3" : " opacity-60"
               } right-[35%] w-fit bottom-[38%]  transition-all ease-in delay-200  absolute`}
             >
               <img className="h-16 w-18" src={location} alt="" />
               <h4 className="relative bottom-[50px] left-3">2011</h4>
             </span>
           )}
-          {video === 2 ? (
+          {map === 2 ? (
             <span
               className={`${
-                video === 2 ? "  opacity-100 p-1 lg:p-3" : " opacity-60"
+                map === 2 ? "  opacity-100 p-1 lg:p-3" : " opacity-60"
               } left-[25%] w-fit bottom-[55%]  transition-all ease-in delay-200  absolute`}
             >
               <img className="h-16 w-18" src={location2} alt="" />
@@ -226,17 +246,17 @@ function Road() {
           ) : (
             <span
               className={`${
-                video === 2 ? "  opacity-100 p-1 lg:p-3" : " opacity-60"
+                map === 2 ? "  opacity-100 p-1 lg:p-3" : " opacity-60"
               } left-[25%] w-fit bottom-[55%]  transition-all ease-in delay-200  absolute`}
             >
               <img className="h-16 w-18" src={location} alt="" />
               <h4 className="relative bottom-[50px] left-3">2015</h4>
             </span>
           )}
-          {video === 3 ? (
+          {map === 3 ? (
             <span
               className={`${
-                video === 3 ? " opacity-100 p-1 lg:p-2" : " opacity-60"
+                map === 3 ? " opacity-100 p-1 lg:p-2" : " opacity-60"
               } right-[29%] w-fit top-24  transition-all ease-in delay-200 absolute`}
             >
               <img className="h-16 w-18" src={location2} alt="" />
@@ -245,18 +265,18 @@ function Road() {
           ) : (
             <span
               className={`${
-                video === 3 ? " opacity-100 p-1 lg:p-2" : " opacity-60"
+                map === 3 ? " opacity-100 p-1 lg:p-2" : " opacity-60"
               } right-[29%] w-fit top-[80px]  transition-all ease-in delay-200 absolute`}
             >
               <img className="h-16 w-18" src={location} alt="" />
               <h4 className="relative bottom-[50px] left-3">2019</h4>
             </span>
           )}
-          {video === 4 ? (
+          {map === 4 ? (
             <span
               className={` ${
-                video === 4 ? " opacity-100 p-1 lg:p-3" : "opacity-60"
-              } right-[50%] w-fit top-6  transition-all ease-in delay-200  absolute`}
+                video === 4 ? " opacity-100 p-1 lg:p-2" : "opacity-60"
+              } right-[48%] w-fit top-6  transition-all ease-in delay-200  absolute`}
             >
               <img className="h-14 w-18" src={location2} alt="" />
               <h4 className="relative  bottom-[45px] left-2">2022</h4>
@@ -264,8 +284,8 @@ function Road() {
           ) : (
             <span
               className={` ${
-                video === 4 ? " opacity-100 p-1 lg:p-3" : "opacity-60"
-              } right-[50%] w-fit top-6  transition-all ease-in delay-200  absolute`}
+                map === 4 ? " opacity-100 p-1 lg:p-3" : "opacity-60"
+              } right-[48%] w-fit top-6  transition-all ease-in delay-200  absolute`}
             >
               <img className="h-14 w-18" src={location} alt="" />
               <h4 className="relative  bottom-[45px] left-2">2022</h4>

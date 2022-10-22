@@ -59,13 +59,8 @@ function Showcase() {
               alt="scorer"
             />
           </div>
-          <div className="flex justify-center -mt-12 ">
-            <button className=" px-3 font-semibold text-slate-100 py-2 rounded-xl bg-[#ff9d01] ">
-              CONTACT US
-            </button>
-          </div>
         </div>
-        <div className="justify-center md:items-start  tracking-tight flex flex-col items-center md:px-10 mt-6 ">
+        <div className="justify-center md:items-start  tracking-tight flex flex-col items-center md:px-10 -mt-5 md:mt-6 ">
           <h1 className="text-orange-400 text-2xl md:text-[34px] lg:text-[50px] xl:text-[58px] md:leading-[48px] lg:leading-[60px]  font-bold">
             DO YOU WANT A 99<sup>th</sup>
             <br /> PERCENTILE SCORE
@@ -86,6 +81,11 @@ function Showcase() {
               className="px-3 py-2 rounded-2xl text-slate-100 bg-[#ff9d01]"
             >
               LIVE DEMO
+            </button>
+          </div>
+          <div className="flex md:hidden justify-center mt-3 ">
+            <button className=" px-3 font-semibold text-slate-100 py-2 rounded-xl bg-[#ff9d01] ">
+              CONTACT US
             </button>
           </div>
           {/* <h1 class="">DO YOU WANT A 99<sup>TH</sup>

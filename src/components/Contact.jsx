@@ -20,10 +20,8 @@ function Contact() {
       style={{
         backgroundImage: `url(${contact})`,
         backgroundRepeat: "no-repeat",
-
-        backgroundPositionY: "-80px",
       }}
-      className="-m-3  background  bg-cover  md:m-0 scroll-area  flex justify-center items-center  relative "
+      className="-m-3  background   md:m-0 scroll-area  flex justify-center items-center  relative "
     >
       <div className="absolute hidden lg:block  right-0  w-[43%]  h-[50vh] lg:top-[26%] xl:top-[30%] bg-[#f5f5f5] "></div>
       <div className=" block lg:absolute right-[6%] z-10 w-96 mx-auto max-w-xs  top-[37%] ">

@@ -88,7 +88,7 @@ function Start() {
             </li>
             <button
               onClick={() => setOpenDemo(true)}
-              className="bg-blue-800  font-medium  shadow-blue-900 px-2 py-2 text-white  rounded-md"
+              className="bg-[]  font-medium  shadow-blue-900 px-2 py-2 text-white  rounded-md"
             >
               Request a Live Demo with Sandeep
             </button>
@@ -130,7 +130,7 @@ function Start() {
             </ul>
             <button
               onClick={() => setOpenDemo(true)}
-              className="bg-blue-700 py-[6px] font-medium shadow-md shadow-blue-900 absolute top-[50%] text-white  right-2 xl:right-[2%] px-3 rounded-md"
+              className="bg-[#164C87] py-[6px] font-medium shadow-md  absolute top-[50%] text-white  right-2 xl:right-[2%] px-3 rounded-md"
             >
               Request a Live Demo with Sandeep
             </button>
@@ -273,7 +273,7 @@ function Start() {
           </div>
         </div>
       )}
-      <h2 className="absolute uppercase hidden bold1 xl:block xl:-tracking-normal text-blue-800 bottom-3 text-lg xl:text-xl text-center w-full ">
+      <h2 className="absolute uppercase hidden bold1 xl:block xl:tracking-[0.03em]  text-white bottom-3 text-lg xl:text-lg text-center w-full ">
         Is Acing your GMAT, stopping you from your Dream University?
       </h2>
     </section>

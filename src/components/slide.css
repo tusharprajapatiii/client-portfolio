@@ -50,9 +50,29 @@
   text-shadow: 2px 0 #ff9d01, -2px 0 #ff9d01, 0 2px #ff9d01, 0 -2px #ff9d01,
     1px 1px #ff9d01, -1px -1px #ff9d01, 1px -1px #ff9d01, -1px 1px #ff9d01;
 }
+.background {
+  height: 100vh !important ;
+  background-position-x: 0;
+  background-size: cover;
+  background-position-y: -80px;
+}
+
 @media screen and (max-width: 768px) {
   .background {
-    height: 600px !important ;
-    background-size: auto;
+    height: 620px !important ;
+    background-position-x: 55px;
+    background-position-y: -20px;
+  }
+  .slide .slick-list {
+    padding: 16px 0px;
+    height: 582px !important ;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .background {
+    height: 700px !important ;
+    background-position-x: -210px;
+    background-position-y: 0px;
   }
 }

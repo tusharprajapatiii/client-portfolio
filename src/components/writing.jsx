@@ -49,6 +49,21 @@ function Writing() {
         (gmat || gre) && "overlay"
       } lg:max-h-screen overflow-x-hidden  px-4 bg-blue-100 py-8 md:bg-white`}
     >
+      <div
+        className={
+          " md:hidden  text-white flex justify-center py-3 font-medium mb-2  mx-auto text-sm rounded-3xl bg-blue-500 "
+        }
+      >
+        <h1>Meet Your Mentor</h1>
+        <span className="ml-2 cursor-pointer">
+          <a
+            target="_blank"
+            href=" https://www.linkedin.com/in/sandeep-gupta-gmat-800-gre-340/"
+          >
+            <FaLinkedin size={18} color="white" />
+          </a>
+        </span>
+      </div>
       <div className="lg:h-full lg:w-[25vw] relative md:basis-[37%] lg:basis-[30%]">
         <img
           className="h-48 mx-auto md:hidden w-36"
@@ -66,7 +81,7 @@ function Writing() {
           />
           <span
             className={
-              " hidden lg:flex absolute py-[6%] text-white bottom-[6%] mx-auto text-xs rounded-3xl bg-blue-500 px-[14%] right-[19%]"
+              " hidden md:flex absolute py-[6%] text-white bottom-[6%] mx-auto text-xs rounded-3xl bg-blue-500 px-[14%] right-[19%]"
             }
           >
             <h1>Meet Your Mentor</h1>
