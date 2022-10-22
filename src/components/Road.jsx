@@ -108,11 +108,11 @@ function Road() {
           {videos.map((v, i) => {
             return (
               <div key={v.id} className="relative h-full">
-                <div className="border  cursor-pointer relative border-red-400 h-[588px] lg:h-[90vh] lg:w-[70%] 2xl:w-[60%]  m-auto w-[80%]   xl:right-0 rounded-2xl bg-[#ff9d01]  p-3">
+                <div className="border  cursor-pointer relative border-red-400 h-[574px] lg:h-[90vh] lg:w-[70%] 2xl:w-[60%]  m-auto w-[80%]   xl:right-0 rounded-2xl bg-[#ff9d01]  p-3">
                   <iframe
                     title="Rankers video"
                     height={220}
-                    className="relative top-3 w-full h-[67%]  border-red-500 border rounded-2xl"
+                    className="relative top-3 w-full h-[60%] md:h-[67%]  border-red-500 border rounded-2xl"
                     src={v.video}
                   ></iframe>
                   <div className=" mt-5">
