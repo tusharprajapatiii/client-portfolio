@@ -114,18 +114,18 @@ function Start() {
                 </a>
               </li>
               <li>
-                <a href="#Success">Success Stories</a>
+                <a href="#Success">SUCCESS STORIES</a>
               </li>
               <li>
-                <a href="#About"> About Us</a>
+                <a href="#About"> ABOUT US</a>
               </li>
               <li>
                 <a target="_blank" href="https://the-bold-you.blogspot.com/">
-                  Blogs
+                  BLOGS
                 </a>{" "}
               </li>
               <li>
-                <a href="#Contact">Contact Us</a>
+                <a href="#Contact">CONTACT US</a>
               </li>
             </ul>
             <button
@@ -273,7 +273,7 @@ function Start() {
           </div>
         </div>
       )}
-      <h2 className="absolute uppercase hidden bold1 xl:block xl:tracking-[0.03em]  text-white bottom-3 text-lg xl:text-lg text-center w-full ">
+      <h2 className="absolute uppercase hidden bold1 text-shadow-1 xl:block xl:tracking-[0.04em]  text-white bottom-3 text-lg xl:text-lg text-center w-full ">
         Is Acing your GMAT, stopping you from your Dream University?
       </h2>
     </section>
