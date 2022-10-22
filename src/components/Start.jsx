@@ -17,13 +17,13 @@ function Start() {
   const [openDemo, setOpenDemo] = useState(false);
   return (
     <section id="Start" className="bg-[#FF9D01] scroll-area relative">
-      <div className="absolute top-4 right-4 rounded-md  border-2 bg-inherit border-white md:hidden  ">
+      <div className="absolute top-3 right-3 rounded-md  bg-inherit  md:hidden  ">
         {!openMenu && (
           <GiHamburgerMenu
             onClick={() => setOpenMenu(true)}
-            className="bg-white p-1"
+            className="bg-white p-[3px] rounded-md"
             color="#FF9D01"
-            size={44}
+            size={40}
           />
         )}
       </div>

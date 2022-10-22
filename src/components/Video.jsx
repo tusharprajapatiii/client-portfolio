@@ -48,9 +48,18 @@ function Video() {
           <h2 className="text-2xl lg:text-3xl text-center lg:font-extrabold my-2">
             What is Mission 770, you ask?
           </h2>
+          <p className="text-sm md:hidden lg:text-xl  md:text-sm  lg:mt-16 ">
+            {" "}
+            From the past 15 years, we here at the Top One Percent started
+            delivering scores of 770+ when not 1 institute back then peak was
+            higher than a 720. We are proud to accomplish this on more than
+            hundreds of occasions year on year. We along with Sandeep Gupta have
+            been able to deliver even perfect scores to our students and our
+            testimonials speak for themselves.
+          </p>
           <motion.p
             animate={animation2}
-            className="text-sm lg:text-xl  md:text-sm  lg:mt-16 "
+            className="text-sm hidden md:block lg:text-xl  md:text-sm  lg:mt-16 "
           >
             {" "}
             From the past 15 years, we here at the Top One Percent started

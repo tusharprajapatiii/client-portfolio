@@ -275,7 +275,7 @@ function Road() {
           {map === 4 ? (
             <span
               className={` ${
-                video === 4 ? " opacity-100 p-1 lg:p-2" : "opacity-60"
+                map === 4 ? " opacity-100 p-1 lg:p-2" : "opacity-60"
               } right-[48%] w-fit top-6  transition-all ease-in delay-200  absolute`}
             >
               <img className="h-14 w-18" src={location2} alt="" />
