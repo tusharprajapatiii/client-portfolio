@@ -23,6 +23,9 @@ function Contact() {
       }}
       className="-m-3  background   md:m-0 scroll-area  flex justify-center items-center  relative "
     >
+      <h1 className="bg-black absolute top-0 left-0 uppercase md:hidden text-[110%] mt-4 md:text-[180%]  font-extrabold tracking-[0.1em] w-full py-3 text-center text-white ">
+        Download Sandeep's secrets
+      </h1>
       <div className="absolute hidden lg:block  right-0  w-[43%]  h-[50vh] lg:top-[26%] xl:top-[30%] bg-[#f5f5f5] "></div>
       <div className=" block lg:absolute right-[6%] z-10 w-96 mx-auto max-w-xs  top-[37%] ">
         <form className="flex flex-col   gap-y-5   ">
