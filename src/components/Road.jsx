@@ -103,12 +103,12 @@ function Road() {
       <div className=" relative md:absolute text-white 2xl:text-3xl top-0 text-xl md:text-[22px] px-2 font-bold md:left-0  lg:left-[5%] pb-2 z-20 bg-black">
         15 YEARS OF SUCCESSFULLY PRODUCING 770 SCORES AND COUNTING...{" "}
       </div>
-      <div className="w-full md:w-[44%] mx-auto px-2 md:px-0 basis-[55%] my-2  md:pl-5   ">
+      <div className="w-full md:w-[44%] mx-auto px-0 md:px-0 basis-[55%] my-2 -ml-[20px] md:ml0  md:pl-5   ">
         <Slider {...settings}>
           {videos.map((v, i) => {
             return (
               <div key={v.id} className="relative h-full">
-                <div className="border  cursor-pointer relative border-red-400 h-[550px] lg:h-[90vh] lg:w-[70%] 2xl:w-[60%]  m-auto w-full  right-0 rounded-2xl bg-[#ff9d01]  p-3">
+                <div className="border  cursor-pointer relative border-red-400 h-[580px] lg:h-[90vh] lg:w-[70%] 2xl:w-[60%]  m-auto w-[80%]   xl:right-0 rounded-2xl bg-[#ff9d01]  p-3">
                   <iframe
                     title="Rankers video"
                     height={220}
@@ -131,6 +131,13 @@ function Road() {
                   className={` ${
                     i == video ? "opacity-100" : "opacity-0"
                   } absolute top-0 h-full hidden transition-opacity font-extrabold duration-[2500ms] ease-linear year -right-4 2xl:right-[10%]   text-black   xl:flex justify-center items-center 2xl:text-[90px] text-[78px]`}
+                >
+                  {v.year}{" "}
+                </div>
+                <div
+                  className={` ${
+                    i == video ? "opacity-100" : "opacity-0"
+                  } absolute top-0 h-full xl:hidden transition-opacity font-extrabold duration-[2500ms] ease-linear year -right-[6%]   text-black   flex justify-center items-center text-[50px]`}
                 >
                   {v.year}{" "}
                 </div>
