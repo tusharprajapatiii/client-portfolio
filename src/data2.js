@@ -139,7 +139,7 @@ const videos = [
     name: "Amit Kumar",
     video: "https://youtube.com/embed/scJ86XX7vbc",
     content: `In simple terms, an absolute Nationwide GMAT sensation scoring a 770. If you feel you have hardships of any sort, then watch him and learn. A must watch.
-    .
+    
     `,
     year: 2021,
   },
