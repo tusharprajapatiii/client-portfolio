@@ -118,7 +118,7 @@ function Showcase() {
       </div>
 
       {openDemo && (
-        <div className="fixed  h-screen w-full  flex justify-between  bg-black text-white top-0 left-0 xl:h-screen z-50">
+        <div className="fixed overflow-auto h-full w-full  flex justify-between  bg-black text-white top-0 left-0 xl:h-screen z-50">
           <div className="w-full xl:w-[27vw] bg-[#FF9D01] ">
             <span
               onClick={() => setOpenDemo(false)}
