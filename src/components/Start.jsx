@@ -88,7 +88,7 @@ function Start() {
             </li>
             <button
               onClick={() => setOpenDemo(true)}
-              className="bg-[]  font-medium  shadow-blue-900 px-2 py-2 text-white  rounded-md"
+              className="bg-[#164C87]  font-medium  shadow-blue-900 px-2 py-2 text-white  rounded-md"
             >
               Request a Live Demo with Sandeep
             </button>
