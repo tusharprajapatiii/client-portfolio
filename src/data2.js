@@ -131,7 +131,7 @@ const videos = [
     id: 16,
     name: "Anushka",
     video: "https://youtube.com/embed/zmO5Xhw5jSA",
-    content: `Came to Top-One-Percent with a goal of a 680-700 score and an admit to ISB. She scored a jaw-dropping 780 and this has opened her gates to the crème de la crème of B-schools. Catch all the action about her preparation in detail..
+    content: `Came to Top-One-Percent with a goal of a 680-700 score and an admit to ISB. She scored a jaw-dropping 780 and this has opened her gates to the crème de la creme of B-schools. Catch all the action about her preparation in detail.
     `,
     year: 2021,
   },
