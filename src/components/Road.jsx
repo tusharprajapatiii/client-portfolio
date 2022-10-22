@@ -100,7 +100,7 @@ function Road() {
       id="Success"
       className={`back scroll-area rounded-[20px] md:rounded-none md:flex relative items-center py-8`}
     >
-      <div className=" relative pl-7 md:absolute text-white 2xl:text-3xl top-0 text-xl md:text-[22px]  px-2 font-bold md:left-0  lg:left-[5%] pb-2 z-20 bg-black">
+      <div className=" relative pl-7 md:pl-0 md:absolute text-white 2xl:text-3xl top-0 text-xl md:text-[22px]  px-2 font-bold md:left-0  lg:left-[5%] pb-2 z-20 bg-black">
         15 YEARS OF SUCCESSFULLY PRODUCING 770 SCORES AND COUNTING...{" "}
       </div>
       <div className="w-full md:w-[44%] mx-auto px-0 md:px-0 basis-[55%] my-2 -ml-[20px] md:ml0  md:pl-5   ">

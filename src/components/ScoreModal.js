@@ -2,7 +2,7 @@ import React from "react";
 
 function ScoreModal({ Score, setGmat, setGre, gre, gmat }) {
   return (
-    <div className="h-screen w-full flex justify-between top-0 left-0  absolute  ">
+    <div className="h-screen w-full flex justify-between top-0 left-0  overflow-auto fixed  ">
       {gmat && (
         <div className="relative h-full w-full lg:w-[80%] border-2 top-4 bg-white m-auto">
           <img className="w-full" src={Score} alt="Score sheet" />
