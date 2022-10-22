@@ -35,7 +35,7 @@ function Start() {
         // animate={{ y: 0 }}
         // transition={{ duration: 0.1 }}
         className={`absolute  top-0 z-40 pb-3 ${
-          openMenu && "translate-y-0"
+          openMenu && "translate-y-[0%]"
         } transition-all translate-y-[-100%] duration-200 ease-linear text-[#FF9D01] bg-white w-full right-0 md:hidden `}
       >
         <div className="flex justify-end p-2">
