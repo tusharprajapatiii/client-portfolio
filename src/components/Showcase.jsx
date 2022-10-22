@@ -84,7 +84,10 @@ function Showcase() {
             </button>
           </div>
           <div className="flex md:hidden justify-center mt-3 ">
-            <button className=" px-3 uppercase font-semibold text-slate-100 py-2 rounded-xl bg-[#ff9d01] ">
+            <button
+              onClick={() => setOpenDemo(true)}
+              className=" px-3 uppercase font-semibold text-slate-100 py-2 rounded-xl bg-[#ff9d01] "
+            >
               Request Demo
             </button>
           </div>
