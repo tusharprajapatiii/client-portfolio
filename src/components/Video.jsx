@@ -45,7 +45,7 @@ function Video() {
           ></motion.iframe>
         </div>
         <div className="px-8 xl:px-14 my-3 md:basis-[40%] lg:basis-[45%] ">
-          <h2 className="text-2xl lg:text-3xl text-center lg:font-extrabold my-2">
+          <h2 className="text-2xl pt-4 md:pt-0 lg:text-3xl text-center lg:font-extrabold my-2">
             What is Mission 770, you ask?
           </h2>
           <p className="text-sm md:hidden lg:text-xl  md:text-sm  lg:mt-16 ">
