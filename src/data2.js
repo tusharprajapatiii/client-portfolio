@@ -136,18 +136,18 @@ const videos = [
 
   {
     id: 16,
-    name: "Anushka",
-    video: "https://youtube.com/embed/zmO5Xhw5jSA",
-    content: `Came to Top-One-Percent with a goal of a 680-700 score and an admit to ISB. She scored a jaw-dropping 780 and this has opened her gates to the crème de la creme of B-schools. Catch all the action about her preparation in detail.
-    `,
-    year: 2022,
-  },
-  {
-    id: 17,
     name: "Amit Kumar",
     video: "https://youtube.com/embed/scJ86XX7vbc",
     content: `In simple terms, an absolute Nationwide GMAT sensation scoring a 770. If you feel you have hardships of any sort, then watch him and learn. A must watch.
     .
+    `,
+    year: 2021,
+  },
+  {
+    id: 17,
+    name: "Anushka",
+    video: "https://youtube.com/embed/zmO5Xhw5jSA",
+    content: `Came to Top-One-Percent with a goal of a 680-700 score and an admit to ISB. She scored a jaw-dropping 780 and this has opened her gates to the crème de la creme of B-schools. Catch all the action about her preparation in detail.
     `,
     year: 2022,
   },
