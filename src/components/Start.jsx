@@ -35,8 +35,8 @@ function Start() {
         // animate={{ y: 0 }}
         // transition={{ duration: 0.1 }}
         className={`absolute  top-0 z-40 pb-3 ${
-          openMenu && "translate-y-[0%]"
-        } transition-all translate-y-[-100%] duration-200 ease-linear text-[#FF9D01] bg-white w-full right-0 md:hidden `}
+          openMenu ? "translate-y-[0%]" : "translate-y-[-100%]"
+        } transition-all  duration-200 ease-linear text-[#FF9D01] bg-white w-full right-0 md:hidden `}
       >
         <div className="flex justify-end p-2">
           <AiOutlineClose onClick={() => setOpenMenu(false)} size={30} />
@@ -97,7 +97,7 @@ function Start() {
       </div>
 
       <div className=" h-[540px] md:h-[450px]  lg:h-full  flex flex-col">
-        <div className="flex justify-between relative pt-8 items-start px-8">
+        <div className="flex justify-between relative  md:pt-8 items-start px-8">
           <div className=" hidden  xl:mx-auto  md:block">
             {/* <FaFacebookF size={28} color="white" />
             <FaYoutube size={28} color="white" />
