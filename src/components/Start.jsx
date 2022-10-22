@@ -97,14 +97,14 @@ function Start() {
       </div>
 
       <div className=" h-[540px] md:h-[450px]  lg:h-full  flex flex-col">
-        <div className="flex justify-between relative  md:pt-8 items-start px-8">
-          <div className=" hidden  xl:mx-auto  md:block">
+        <div className="flex  justify-between relative  md:pt-8 items-start px-8">
+          <div className=" hidden md:-ml-5 lg:ml-0   xl:mx-auto  md:block">
             {/* <FaFacebookF size={28} color="white" />
             <FaYoutube size={28} color="white" />
             <BsTwitter size={28} color="white" />
             <FaWhatsapp size={28} color="white" />
             <FaGooglePlusG size={32} color="white" /> */}
-            <ul className="flex lg:gap-8 xl:gap-12 cursor-pointer md:gap-4 font-semibold pr-12 gru text-white">
+            <ul className="flex lg:gap-8 xl:gap-12 md:text-[15px] lg:text-base  cursor-pointer md:gap-4 font-semibold pr-12  text-white">
               <li>
                 <a
                   target="_blank"
