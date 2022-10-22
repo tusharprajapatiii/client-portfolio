@@ -273,7 +273,7 @@ function Start() {
           </div>
         </div>
       )}
-      <h2 className="absolute uppercase hidden bold1 text-shadow-1 xl:block xl:tracking-[0.04em]  text-white bottom-3 text-lg xl:text-lg text-center w-full ">
+      <h2 className="absolute uppercase  bold1 text-shadow-1 xl:block text-base xl:tracking-[0.04em]  text-white bottom-3  xl:text-lg text-center w-full ">
         Transforming Your Ivy-League Dream School Into Reality
       </h2>
     </section>

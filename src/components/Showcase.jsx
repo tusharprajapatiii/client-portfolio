@@ -84,8 +84,8 @@ function Showcase() {
             </button>
           </div>
           <div className="flex md:hidden justify-center mt-3 ">
-            <button className=" px-3 font-semibold text-slate-100 py-2 rounded-xl bg-[#ff9d01] ">
-              CONTACT US
+            <button className=" px-3 uppercase font-semibold text-slate-100 py-2 rounded-xl bg-[#ff9d01] ">
+              Request Demo
             </button>
           </div>
           {/* <h1 class="">DO YOU WANT A 99<sup>TH</sup>
