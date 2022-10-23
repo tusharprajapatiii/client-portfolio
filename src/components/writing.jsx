@@ -18,7 +18,6 @@ function Writing() {
 
   const [hide, setHide] = useState(false);
   const { ref, inView, entry } = useInView({
-    /* Optional options */
     threshold: 0.3,
   });
   const animation = useAnimation();

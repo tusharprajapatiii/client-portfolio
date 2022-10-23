@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 function Showcase() {
   const [openDemo, setOpenDemo] = useState(false);
 
-  const { ref, inView, entry } = useInView({});
+  const { ref, inView } = useInView({});
   const animation = useAnimation();
   const animation2 = useAnimation();
   const animation3 = useAnimation();
