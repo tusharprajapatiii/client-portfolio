@@ -3,14 +3,12 @@ import road from "../assets/road.png";
 import Slider from "react-slick";
 import videos from "../data2";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
-import template from "../assets/template.jpg";
 import "./slide.css";
 import location from "../assets/location.png";
 import location2 from "../assets/location2.png";
 
 function Road() {
   const [video, setVideoIndex] = useState(0);
-  // const map= [0,1,2,3,4]
   const [map, setMap] = useState(0);
   useEffect(() => {
     let slider = setInterval(() => {
@@ -54,18 +52,15 @@ function Road() {
   const settings = {
     className: "slide",
     infinite: true,
-    // dots: true,
+
     slidesToShow: 1,
     slidesToScroll: 1,
-    // dotsClass: "dots",
+
     vertical: true,
 
     verticalSwiping: true,
     autoplay: true,
-    // lazyLoad: true,
-    // centerMode: true,
-    // prevArrow: <PrevArrow />,
-    // nextArrow: <NextArrow />,
+
     arrows: false,
     pauseOnHover: true,
     beforeChange: (current, next) => setVideoIndex(next),
@@ -123,9 +118,6 @@ function Road() {
                       {v.content}
                     </p>
                   </div>
-                  {/* <div className="absolute -bottom-1  -right-4 p-[4px] font-bold border-4 rounded-full  bg-white  border-red-600 ">
-                    {v.year}
-                  </div> */}
                 </div>
                 <div
                   className={` ${
@@ -150,55 +142,7 @@ function Road() {
         <div className="relative text-[13px] font-semibold py-8 my-2">
           <div className="absolute left-[18%] top-8"></div>
           <img className="h-[90%] lg:h-[90vh] w-full  " src={road} alt="road" />
-          {/* <div className="relative">
-            <img
-              className={` ${
-                video === 0
-                  ? `border-red-600 opacity-100 p-3`
-                  : `border-gray-600 opacity-40`
-              } absolute bottom-24 font-semibold  h-18 w-12  left-[25%] transition-all ease-in  p-2 delay-150 `}
-              src={location}
-              alt=""
-            />
-            <h1 className="absolute text-black">2007</h1>
-          </div>
 
-          <div
-            className={` ${
-              video === 1
-                ? "border-red-600  opacity-100 p-3"
-                : "border-gray-600 opacity-40"
-            } absolute bottom-[38%] font-semibold border-[8px] transition-all ease-in right-[35%]  bg-white p-2 delay-150 rounded-tl-3xl rounded-tr-3xl`}
-          >
-            2013
-          </div>
-          <div
-            className={`${
-              video === 2
-                ? "border-red-600  opacity-100 p-3"
-                : "border-gray-600 opacity-40"
-            } absolute bottom-[55%] font-semibold border-[8px] left-[25%] bg-white p-2  transition-all delay-150 ease-in rounded-tl-3xl rounded-tr-3xl`}
-          >
-            2014
-          </div>
-          <div
-            className={`${
-              video === 3
-                ? "border-red-600  opacity-100 p-3"
-                : "border-gray-600 opacity-40"
-            } absolute top-24 font-semibold border-[8px] right-[30%] bg-white p-1  rounded-tl-3xl delay-150 transition-all ease-in rounded-tr-3xl`}
-          >
-            2015
-          </div>
-          <div
-            className={`${
-              video === 4
-                ? "border-red-600 opacity-100 p-3"
-                : "border-gray-600 opacity-40"
-            } absolute top-10 font-semibold text-sm border-[5px]  right-[50%] bg-white p-1 transition-all ease-in delay-150 rounded-tl-3xl rounded-tr-3xl`}
-          >
-            2022
-          </div> */}
           {map === 0 ? (
             <span
               className={`  ${

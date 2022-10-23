@@ -96,9 +96,7 @@ function Writing() {
           </span>
         </motion.div>
       </div>
-      {/* <h1 className="text-center cursive md:hidden py-3">
-        a note from sandeep gupta
-      </h1> */}
+
       <div className="text-[12px]   md:basis-[63%] lg:basis-[70%] lg:h-[95%] lg:my-auto  line tracking-wider md:tracking-widest md:border-t-3 lg:text-sm xl:text-sm relative md:rounded-bl-[50px] md:text-xs  md:box md:border-t-4  md:border-blue-400 xl:py-6  md:px-6 md:py-4 px-2">
         <p className="mt-2">
           Hi, This is Sandeep Gupta, the foremost GMAT / GRE Trainer in Asia
@@ -167,36 +165,7 @@ function Writing() {
           PRIME, ACT, ANT, ACED, LINGO, and TRAPS), my students have been able
           to get similar successes on more than 20,000 occasions.
         </p>
-        {/* <button
-          onClick={() => {
-            setGmat(true);
-            setGre(false);
-          }}
-          className="py-1 px-2 mr-1 ml-1 border-2 font-semibold border-black text-white bg-orange-500 rounded-md"
-        >
-          GMAT
-        </button>
-        /
-        <button
-          onClick={() => {
-            setGre(true);
-            setGmat(false);
-          }}
-          className=" py-1 ml-1 px-2 border-2 font-semibold border-black text-white bg-orange-500 rounded-md"
-        >
-          GRE
-        </button>{" "} */}
-        {/* For the last 25+ years (since 1996), I have dedicated my life to making
-        the dream of a GMAT / GRE 99th percentile score and of an Ivy League
-        education come true for thousands of my students (from places like
-        Harvard, Stanford, MIT, and every other top university in the world) for
-        MBA, MS, and Ph.D. programs. The biggest strength of my teaching is that
-        I am able to transfer my “Success-DNA” to my students – I repeat: my
-        biggest achievement is not that I have scored the perfect scores on the
-        GMAT/GRE multiple times but that, by using the same techniques that I
-        used (OCTAVE, CLESSSP, PRIME, ACT, ANT, ACED, LINGO, and TRAPS), my
-        students have been able to get similar successes on more than 20,000
-        occasions. */}
+
         <button
           onClick={() => setOpenDemo(true)}
           className={`hidden ${

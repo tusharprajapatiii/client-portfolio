@@ -1,17 +1,12 @@
 import React from "react";
-import logo from "../assets/logo_main.png";
 import main from "../assets/Asset-1.png";
 import { AiOutlineClose } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
 import "./slide.css";
 import { motion } from "framer-motion";
 import { AiOutlineStar, AiFillStar } from "react-icons/ai";
-import { BsTwitter } from "react-icons/bs";
 import { useState } from "react";
-const variants = {
-  show: { opacaity: 1, y: 0, transition: { duration: 0.2 } },
-  close: { opacaity: 0, y: "-100%", transition: { duration: 0.2 } },
-};
+
 function Start() {
   const [openMenu, setOpenMenu] = useState();
   const [openDemo, setOpenDemo] = useState(false);
@@ -29,11 +24,6 @@ function Start() {
       </div>
 
       <div
-        // animate={openMenu ? "show" : "close"}
-        // variants={variants}
-        // initial={{ y: -300 }}
-        // animate={{ y: 0 }}
-        // transition={{ duration: 0.1 }}
         className={`absolute  top-0 z-40 pb-3 ${
           openMenu ? "translate-y-[0%]" : "translate-y-[-100%]"
         } transition-all  duration-200 ease-linear text-[#FF9D01] bg-white w-full right-0 md:hidden `}
@@ -99,11 +89,6 @@ function Start() {
       <div className=" h-[540px] md:h-[450px]  lg:h-full  flex flex-col">
         <div className="flex  justify-between relative  md:pt-8 items-start px-8">
           <div className=" hidden md:-ml-5 lg:ml-0   xl:mx-auto  md:block">
-            {/* <FaFacebookF size={28} color="white" />
-            <FaYoutube size={28} color="white" />
-            <BsTwitter size={28} color="white" />
-            <FaWhatsapp size={28} color="white" />
-            <FaGooglePlusG size={32} color="white" /> */}
             <ul className="flex lg:gap-8 xl:gap-12 md:text-[15px] lg:text-base  cursor-pointer md:gap-4 font-semibold pr-12  text-white">
               <li>
                 <a
@@ -154,7 +139,6 @@ function Start() {
           </motion.span>
           <img className="md:h-72 h-32 w-32 md:w-80" src={main} alt=""></img>
         </div>
-        {/* <span className="sticky bottom-2 right-4">what</span> */}
       </div>
       {openDemo && (
         <div className="fixed overflow-auto min-h-screen max-h-screen w-full  flex justify-between  bg-black text-white top-0 left-0 xl:h-screen z-50">

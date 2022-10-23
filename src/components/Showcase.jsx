@@ -9,9 +9,7 @@ import { useEffect, useState } from "react";
 function Showcase() {
   const [openDemo, setOpenDemo] = useState(false);
 
-  const { ref, inView, entry } = useInView({
-    /* Optional options */
-  });
+  const { ref, inView, entry } = useInView({});
   const animation = useAnimation();
   const animation2 = useAnimation();
   const animation3 = useAnimation();
@@ -91,9 +89,6 @@ function Showcase() {
               Request Demo
             </button>
           </div>
-          {/* <h1 class="">DO YOU WANT A 99<sup>TH</sup>
-          <br>PERCENTILE SCORE
-          <br>ON YOUR <span>GMAT / GRE ?</span>   */}
         </div>
         <div className="hidden relative xl:mr-0 lg:-mr-[50px] flex-1 md:block">
           <motion.img

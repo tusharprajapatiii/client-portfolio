@@ -10,7 +10,6 @@ import {
   FaInstagram,
   FaMailchimp,
 } from "react-icons/fa";
-import { BsTwitter } from "react-icons/bs";
 import { GrMail } from "react-icons/gr";
 import "./slide.css";
 function Contact() {
@@ -86,24 +85,6 @@ function Contact() {
       </div>
       <div className="z-20 absolute bottom-0 text-sm flex py-1 flex-col-reverse  bg-[#373737] text-white w-full ">
         <div className="flex flex-col">
-          {/* <div className=" flex justify-between items-center md:grid grid-cols-2 gap-1 text-xs rounded-tr-[30px] rounded-br-[30px] relative bottom-2 px-8 py-1 my-1 bg-orange-600">
-            <span>
-              <strong>
-                Call us: <a href="tel:+919739561394">+91 97395-61394</a> &nbsp;{" "}
-              </strong>
-            </span>
-            <span>
-              <a
-                className="hidden md:block"
-                href="mailto:info@top-one-percent.com"
-              >
-                info@top-one-percent.com
-              </a>
-              <a href="mailto:info@top-one-percent.com">
-                <GrMail fill="white" size={20} />
-              </a>
-            </span>
-          </div> */}
           <div className="flex xl:hidden z-50 py-1 cursor-pointer justify-center space-x-4">
             <a
               target="_blank"
@@ -146,43 +127,3 @@ function Contact() {
 }
 
 export default Contact;
-{
-  /* <div className=" bg-black lg:h-[100vh] relative lg:flex ">
-<div className="flex justify-center h-[70vh] md:h-auto md:py-6 bg-black rounded-br-[120px] items-center basis-1/2  ">
-  <div>
-    <h1 className="text-slate-100 text-center py-8 font-semibold text-lg">
-      DOWNLOAD SANDEEP'S GMAT SECRET
-    </h1>
-    <form className="flex flex-col gap-y-5 ">
-      <input
-        className="p-2 rounded-xl"
-        type="text"
-        placeholder="Name"
-      />
-      <input
-        className="p-2 rounded-xl"
-        type="text"
-        placeholder="Email"
-      />
-      <input
-        className="p-2 rounded-xl"
-        type="text"
-        placeholder="Phone"
-      />
-      <button
-        className="p-2 rounded-2xl text-slate-100 font-medium bg-orange-500 "
-        type="submit"
-      >
-        DOWNLOAD NOW
-      </button>
-    </form>
-  </div>
-</div>
-<div className="flex-1 relative hidden md:flex justify-start items-start  rounded-tl-[120px] bg-sky-500"></div>
-</div>
-<img
-className="  hidden   lg:block absolute -bottom-6 right-0 h-[120vh] w-[980px]"
-src={girl}
-alt="girl"
-/> */
-}
