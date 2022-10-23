@@ -118,7 +118,7 @@ function Showcase() {
       </div>
 
       {openDemo && (
-        <div className="fixed overflow-auto h-full w-full  flex justify-between  bg-black text-white top-0 left-0 xl:h-screen z-50">
+        <div className="fixed overflow-auto min-h-screen max-h-screen w-full  flex justify-between  bg-black text-white top-0 left-0 xl:h-screen z-50">
           <div className="w-full xl:w-[27vw] bg-[#FF9D01] ">
             <span
               onClick={() => setOpenDemo(false)}
@@ -130,7 +130,7 @@ function Showcase() {
               To Fix your Demo Appointment, Call / Whatsapp / Text immediately
               to +9197395-61394
             </h3>
-            <div className="h-full  text-center  ">
+            <div className="  text-center  ">
               <form
                 className="flex max-w-lg mx-auto h-fit my-auto flex-col text-black py-8  lg:py-6 justify-between space-y-5 xl:space-y-3 px-8 bg-black "
                 action=""
