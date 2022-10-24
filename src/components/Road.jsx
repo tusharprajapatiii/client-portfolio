@@ -6,10 +6,11 @@ import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import "./slide.css";
 import location from "../assets/location.png";
 import location2 from "../assets/location2.png";
-
+import { AiFillYoutube } from "react-icons/ai";
 function Road() {
   const [video, setVideoIndex] = useState(0);
   const [map, setMap] = useState(0);
+  const [startVideo, setStartVideo] = useState(false);
   useEffect(() => {
     let slider = setInterval(() => {
       setMap(map + 1);
@@ -89,7 +90,7 @@ function Road() {
       clearInterval(slider);
     };
   }, [video]);
-
+  const play = (id) => {};
   return (
     <section
       id="Success"
@@ -104,12 +105,29 @@ function Road() {
             return (
               <div key={v.id} className="relative h-full">
                 <div className="border  cursor-pointer relative border-red-400 h-[574px] lg:h-[90vh] lg:w-[70%] 2xl:w-[60%]  m-auto w-[80%] md:w-full   xl:right-0 rounded-2xl bg-[#ff9d01]  p-3">
-                  <iframe
-                    title="Rankers video"
-                    height={220}
-                    className="relative top-3 w-full h-[60%] md:h-[67%]  border-red-500 border rounded-2xl"
-                    src={v.video}
-                  ></iframe>
+                  {!startVideo ? (
+                    <div
+                      onClick={() => setStartVideo(true)}
+                      className="relative top-3 w-full h-[60%] md:h-[67%]  border-red-500 border rounded-2xl flex justify-center items-center"
+                    >
+                      <AiFillYoutube
+                        className="absolute h-16 lg:h-20 lg:w-20  w-16"
+                        color="red"
+                      />
+                      <img
+                        className="h-full w-full rounded-2xl"
+                        src={v.img}
+                        alt={v.name}
+                      />
+                    </div>
+                  ) : (
+                    <iframe
+                      title="Rankers video"
+                      height={220}
+                      className="relative top-3 w-full h-[60%] md:h-[67%] bg-black border-red-500 border rounded-2xl"
+                      src={v.video}
+                    ></iframe>
+                  )}
                   <div className=" mt-5">
                     <h2 className="text-center font-semibold text-white">
                       {v.name}
